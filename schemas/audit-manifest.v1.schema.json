@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/audit-manifest.v1.schema.json",
+  "title": "BlockMarket audit manifest.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tournament_id", "files", "audit_hash"],
+  "properties": {
+    "schema": {"const": "audit-manifest.v1"},
+    "tournament_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+    "files": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "size", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "size": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "audit_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

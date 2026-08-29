@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/seed-reveal.v1.schema.json",
+  "title": "BlockMarket seed reveal.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tournament_id", "master_seed", "seed_count"],
+  "properties": {
+    "schema": {"const": "seed-reveal.v1"},
+    "tournament_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+    "master_seed": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "seed_count": {"type": "integer", "minimum": 1, "maximum": 100}
+  }
+}

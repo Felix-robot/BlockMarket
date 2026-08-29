@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1512">
+    <meta name="description" content="BlockMarket：一场可复现、可审计的双人合成市场策略游戏。">
+    <title>BlockMarket · 写报价，读订单流</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body data-active-slide="0">
+    <a class="skip-link" href="#play">跳到主要内容</a>
+
+    <header class="site-header">
+      <button class="brand" type="button" data-goto="0" aria-label="回到玩法页">
+        <svg aria-hidden="true" viewBox="0 0 44 44">
+          <rect x="2" y="2" width="40" height="40" rx="10"></rect>
+          <path d="M12 29V17h8.2c3.7 0 5.8 1.9 5.8 4.6 0 1.5-.7 2.7-1.9 3.4 1.8.5 2.9 1.8 2.9 3.7 0 .1 0 .2-.1.3H22c0-1.4-.8-2.1-2.5-2.1H17V29h-5Zm5-6.1h2.7c1 0 1.5-.4 1.5-1.2 0-.8-.5-1.2-1.5-1.2H17v2.4Z"></path>
+        </svg>
+        <span>BLOCK<span>MARKET</span></span>
+      </button>
+      <nav aria-label="三屏导航">
+        <button type="button" data-goto="0" aria-current="page"><span>01</span>玩法</button>
+        <button type="button" data-goto="1"><span>02</span>回放</button>
+        <button type="button" data-goto="2"><span>03</span>证据</button>
+      </nav>
+      <div class="header-links">
+        <a href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">完整玩法 ↗</a>
+        <a href="https://github.com/Felix-robot/BlockMarket" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </header>
+
+    <main class="deck" id="main">
+      <section class="slide intro-slide" id="play" data-slide="0" aria-label="玩法与规则">
+        <div class="intro-layout">
+          <div class="hero-copy">
+            <p class="kicker">SYNTHETIC MARKET · CODE ARENA</p>
+            <h1>给客户报价，<br><em>抢下订单。</em></h1>
+            <p class="lead">每轮会来一位想买或卖 <strong>1–10 份</strong>的客户。你和对手同时报出买价和卖价，客户只和最优合法报价成交。<strong>300 轮后，终局净资产更高的人赢。</strong></p>
+            <div class="hero-actions">
+              <button class="primary-action" type="button" data-goto="1">看一轮怎么成交 <span>→</span></button>
+              <a class="guide-action" href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">打开 Player Guide ↗</a>
+            </div>
+            <dl class="hero-stats">
+              <div><dt>300 轮</dt><dd>一场比赛</dd></div>
+              <div><dt>1–10</dt><dd>每笔订单数量</dd></div>
+              <div><dt>0–100</dt><dd>库存范围</dd></div>
+            </dl>
+          </div>
+
+          <div class="play-card">
+            <div class="decision-card" aria-label="单轮决策示意">
+              <div class="decision-head"><span>ROUND 017</span><span>PUBLIC VIEW</span></div>
+              <div class="decision-price"><span>你看到：当前参考价</span><strong>100.00</strong></div>
+              <div class="decision-row signal-row"><span>你还看到：方向提示</span><strong>UP <small>只有 65% 准</small></strong></div>
+              <div class="decision-row"><span>你提交：愿意怎么买卖</span><strong>买 99.55 × 7&nbsp; / &nbsp;卖 撤单</strong></div>
+              <div class="decision-row muted-row"><span>你看不到：本轮客户</span><strong>? &nbsp;买卖方向 · 数量 · 能接受的价格</strong></div>
+            </div>
+            <ol class="core-loop">
+              <li><span>客户卖</span><strong>买价最高者成交</strong><small>最高 bid 买到</small></li>
+              <li><span>客户买</span><strong>卖价最低者成交</strong><small>最低 ask 卖出</small></li>
+              <li><span>比赛结束</span><strong>净资产高者获胜</strong><small>现金 + 库存估值 − 费用</small></li>
+            </ol>
+            <div class="tradeoff-line"><strong>90%</strong> 普通订单给你赚钱机会 <i>·</i> <strong>10%</strong> 知情订单可能专门占你的便宜</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide replay-slide" id="replay" data-slide="1" aria-label="真实对局回放">
+        <div class="slide-heading">
+          <div><p class="kicker">VERIFIED REPLAY</p><h2>把一场对局拆开看。</h2></div>
+          <p>真实引擎生成 · 独立 verifier 通过 · 拖动轮次查看决策后果</p>
+        </div>
+
+        <div class="replay-console" data-state="loading">
+          <div class="console-header">
+            <div><span id="match-id">LOADING REPLAY…</span><small id="verified-label">VERIFYING</small></div>
+            <div class="hash-label"><span>CHAIN TIP</span><code id="event-hash">————————</code></div>
+          </div>
+
+          <div class="console-grid">
+            <div class="chart-panel">
+              <div class="panel-label"><span>REFERENCE / BLOCK <strong id="block-label">—</strong></span><span>△ 成交</span></div>
+              <svg id="replay-chart" viewBox="0 0 840 300" preserveAspectRatio="none" role="img" aria-label="真实对局参考价折线图">
+                <g id="chart-grid"></g><path id="price-area"></path><polyline id="price-line"></polyline>
+                <line id="chart-cursor"></line><circle id="chart-point" r="6"></circle><g id="fill-markers"></g>
+              </svg>
+              <div class="chart-readout">
+                <div><span>REFERENCE</span><strong id="reference-price">—</strong></div>
+                <div><span>NEXT REF.</span><strong id="next-price">—</strong></div>
+                <div><span>SIGNAL</span><strong id="signal">—</strong></div>
+                <div><span>REVEALED ORDER</span><strong id="customer-order">—</strong></div>
+              </div>
+            </div>
+
+            <aside class="round-panel">
+              <div class="panel-label"><span>ROUND DECODE</span><span id="order-kind" class="pill">—</span></div>
+              <div class="quote-matchup">
+                <article class="bot-card bot-a">
+                  <header><span>A</span><strong>SIGNAL FOLLOWER</strong></header>
+                  <div><span>BID</span><strong id="a-bid">—</strong></div><div><span>ASK</span><strong id="a-ask">—</strong></div>
+                </article>
+                <article class="bot-card bot-b">
+                  <header><span>B</span><strong>TIGHT SPREAD</strong></header>
+                  <div><span>BID</span><strong id="b-bid">—</strong></div><div><span>ASK</span><strong id="b-ask">—</strong></div>
+                </article>
+              </div>
+              <div class="round-result"><span>本轮结果</span><strong id="fill-result">—</strong><p id="round-explanation">正在载入真实回放……</p></div>
+            </aside>
+          </div>
+
+          <div class="score-strip">
+            <div><span>A · 库存</span><strong id="a-inventory">—</strong><small id="a-equity">EQUITY —</small></div>
+            <div class="relative-score"><span>相对优势</span><strong id="live-score">—</strong><div class="score-track"><i id="score-indicator"></i></div></div>
+            <div class="align-right"><span>B · 库存</span><strong id="b-inventory">—</strong><small id="b-equity">EQUITY —</small></div>
+          </div>
+
+          <div class="replay-controls">
+            <button id="prev-round" type="button" aria-label="上一轮">←</button>
+            <button id="play-replay" class="play" type="button" aria-label="播放回放"><span>▶</span> PLAY</button>
+            <button id="next-round" type="button" aria-label="下一轮">→</button>
+            <input id="round-slider" type="range" min="0" max="47" value="0" aria-label="选择回放轮次">
+            <output id="round-output" for="round-slider">01 / 48</output>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide evidence-slide" id="evidence" data-slide="2" aria-label="策略、审计与下一阶段">
+        <div class="evidence-heading">
+          <p class="kicker dark-kicker">STRATEGY · AUDIT · NEXT</p>
+          <h2>没有固定最优，<br>也没有审计黑箱。</h2>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="evidence-card strategy-card">
+            <header><span>01</span><strong>循环克制</strong><small>100 seeds · AB/BA</small></header>
+            <div class="strategy-list">
+              <div><span>信号</span><strong>SignalFollower</strong><small>+0.030718</small></div>
+              <i>→</i>
+              <div><span>流量</span><strong>TightSpread</strong><small>+0.246719</small></div>
+              <i>→</i>
+              <div><span>适应</span><strong>OpponentAdaptive</strong><small>+0.060065</small></div>
+              <i>↩</i>
+            </div>
+            <p>七个参考策略没有严格统治者；这是实证结果，不是数学证明。</p>
+          </article>
+
+          <article class="evidence-card audit-card">
+            <header><span>02</span><strong>独立审计</strong><small>COMMIT → VERIFY</small></header>
+            <ol>
+              <li><span>Commit</span><small>赛前公布种子承诺</small></li>
+              <li><span>Play AB / BA</span><small>同环境交换位置</small></li>
+              <li><span>Reveal</span><small>赛后揭示隐藏材料</small></li>
+              <li><span>Verify</span><small>重算订单、成交与哈希</small></li>
+            </ol>
+            <code><span>$</span> verify replay.json&nbsp; <strong>✓ valid</strong></code>
+          </article>
+
+          <article class="evidence-card next-card">
+            <header><span>03</span><strong>下一关闭条件</strong><small>GATE 4</small></header>
+            <div><strong>5–10 人</strong><span>真人封闭 Alpha</span></div>
+            <ul><li>找规则误解</li><li>找新统治策略</li><li>找位置尾部</li></ul>
+            <p>核心规则、审计、矩阵、Bot Runner 与锦标赛编排代码已完成。</p>
+            <nav class="public-links" aria-label="项目链接">
+              <a href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">Player Guide ↗</a>
+              <a href="https://github.com/Felix-robot/BlockMarket" target="_blank" rel="noopener noreferrer">GitHub 源码 ↗</a>
+            </nav>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="deck-controls" aria-label="页面切换">
+      <button id="deck-prev" type="button" aria-label="上一页">←</button>
+      <div><button type="button" data-goto="0" aria-label="第 1 页"></button><button type="button" data-goto="1" aria-label="第 2 页"></button><button type="button" data-goto="2" aria-label="第 3 页"></button></div>
+      <span id="slide-count">01 / 03</span>
+      <button id="deck-next" type="button" aria-label="下一页">→</button>
+    </div>
+  </body>
+</html>

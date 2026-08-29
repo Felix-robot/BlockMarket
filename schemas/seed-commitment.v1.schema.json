@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/seed-commitment.v1.schema.json",
+  "title": "BlockMarket seed commitment.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tournament_id", "seed_count", "reveal_hash", "tournament_config_hash"],
+  "properties": {
+    "schema": {"const": "seed-commitment.v1"},
+    "tournament_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+    "seed_count": {"type": "integer", "minimum": 1, "maximum": 100},
+    "reveal_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tournament_config_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/tournament-result.v1.schema.json",
+  "title": "BlockMarket tournament result.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "ruleset", "tournament_id", "seed_commitment", "blocks", "seed_count", "paired_comparisons", "match_count", "standings", "pair_results", "replays", "result_hash"],
+  "properties": {
+    "schema": {"const": "tournament-result.v1"},
+    "ruleset": {"const": "blockmarket-v1-prototype.2"},
+    "tournament_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+    "seed_commitment": {"$ref": "#/$defs/hash"},
+    "blocks": {"type": "integer", "minimum": 1},
+    "seed_count": {"type": "integer", "minimum": 1},
+    "paired_comparisons": {"type": "integer", "minimum": 1},
+    "match_count": {"type": "integer", "minimum": 2},
+    "standings": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/standing"}},
+    "pair_results": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "replays": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/replayIndex"}},
+    "result_hash": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "score": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{12}$"},
+    "standing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["participant_id", "submission_hash", "mean_score", "total_score", "paired_games", "wins", "draws", "losses", "invalid_actions", "runner_faults", "rank"],
+      "properties": {
+        "participant_id": {"type": "string"}, "submission_hash": {"$ref": "#/$defs/hash"},
+        "mean_score": {"$ref": "#/$defs/score"}, "total_score": {"$ref": "#/$defs/score"},
+        "paired_games": {"type": "integer", "minimum": 1}, "wins": {"type": "integer", "minimum": 0},
+        "draws": {"type": "integer", "minimum": 0}, "losses": {"type": "integer", "minimum": 0},
+        "invalid_actions": {"type": "integer", "minimum": 0}, "runner_faults": {"type": "integer", "minimum": 0},
+        "rank": {"type": "integer", "minimum": 1}
+      }
+    },
+    "replayIndex": {
+      "type": "object", "additionalProperties": false,
+      "required": ["match_id", "seed_index", "seed_id", "leg", "player_a", "player_b", "replay_path", "replay_sha256", "diagnostics_path", "diagnostics_sha256"],
+      "properties": {
+        "match_id": {"type": "string"}, "seed_index": {"type": "integer", "minimum": 0},
+        "seed_id": {"type": "string", "pattern": "^[0-9a-f]{16}$"}, "leg": {"enum": ["AB", "BA"]},
+        "player_a": {"type": "string"}, "player_b": {"type": "string"},
+        "replay_path": {"type": "string"}, "replay_sha256": {"$ref": "#/$defs/hash"},
+        "diagnostics_path": {"type": "string"}, "diagnostics_sha256": {"$ref": "#/$defs/hash"}
+      }
+    }
+  }
+}

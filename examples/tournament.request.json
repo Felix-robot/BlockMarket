@@ -1,0 +1,22 @@
+{
+  "tournament_id": "alpha-demo",
+  "blocks": 50,
+  "seed_count": 2,
+  "runner_limits": {
+    "decision_timeout_ms": 250,
+    "max_stdout_bytes": 65536,
+    "max_stderr_bytes": 65536
+  },
+  "participants": [
+    {
+      "participant_id": "python-starter",
+      "source": "../starter_kits/python/bot.py",
+      "command": ["python3", "-u", "{entrypoint}"]
+    },
+    {
+      "participant_id": "node-starter",
+      "source": "../starter_kits/typescript/bot.mjs",
+      "command": ["node", "{entrypoint}"]
+    }
+  ]
+}

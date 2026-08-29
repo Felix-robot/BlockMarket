@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/tournament-config.v1.schema.json",
+  "title": "BlockMarket tournament config.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "tournament_id", "ruleset", "blocks", "seed_count", "runner_limits", "participants"],
+  "properties": {
+    "schema": {"const": "tournament-config.v1"},
+    "tournament_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+    "ruleset": {"const": "blockmarket-v1-prototype.2"},
+    "blocks": {"type": "integer", "minimum": 1, "maximum": 1000000},
+    "seed_count": {"type": "integer", "minimum": 1, "maximum": 100},
+    "runner_limits": {"$ref": "tournament-request.v1.schema.json#/$defs/limits"},
+    "participants": {
+      "type": "array", "minItems": 2, "maxItems": 16,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["participant_id", "submission_hash", "entrypoint", "command"],
+        "properties": {
+          "participant_id": {"$ref": "tournament-request.v1.schema.json#/$defs/id"},
+          "submission_hash": {"$ref": "#/$defs/hash"},
+          "entrypoint": {"type": "string", "minLength": 1},
+          "command": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    }
+  },
+  "$defs": {"hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+}

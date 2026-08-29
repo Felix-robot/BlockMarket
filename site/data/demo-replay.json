@@ -1,0 +1,5382 @@
+{
+  "events": [
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15256.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9508.95000000",
+          "equity": "15290.30447500",
+          "fees": "0.24552500",
+          "inventory": "55"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14920.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10000.00000000",
+          "equity": "14920.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "97.96",
+              "quantity": "7"
+            },
+            "decision_seq": 1
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "97.96",
+              "quantity": "7"
+            },
+            "decision_seq": 1
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "98.61",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "98.21",
+              "quantity": "10"
+            },
+            "decision_seq": 1
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "98.61",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "98.21",
+              "quantity": "10"
+            },
+            "decision_seq": 1
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 1,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "5"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "5",
+        "reservation_price": "97.34",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.3",
+        "x_prev": "0.1"
+      },
+      "event_hash": "441e31011ac9d8f1c2800631cf918b8f28d0d22bed3048d45b072b7614796ca7",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.24552500",
+          "notional": "491.05000000",
+          "player_id": "B",
+          "price": "98.21",
+          "quantity": "5"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "105.12",
+      "previous_hash": "06d5b2e054090c67199fef95da0a4f3731a3d5bc98593f0fd2a48a2cf68cc646",
+      "reference_price": "98.41",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14885.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9824.91000000",
+          "equity": "14905.42649500",
+          "fees": "0.40350500",
+          "inventory": "52"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15256.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9508.95000000",
+          "equity": "15290.30447500",
+          "fees": "0.24552500",
+          "inventory": "55"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "105.57",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 2
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.57",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 2
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "105.32",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "104.92",
+              "quantity": "10"
+            },
+            "decision_seq": 2
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.32",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "104.92",
+              "quantity": "10"
+            },
+            "decision_seq": 2
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 2,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "8"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "3",
+        "reservation_price": "107.23",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.904",
+        "x_prev": "0.3"
+      },
+      "event_hash": "f802eee095f9cd26c7cf2ed0873dd9f455d36f3e1163fab55e6030f8a47b80bb",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.15798000",
+          "notional": "315.96000000",
+          "player_id": "B",
+          "price": "105.32",
+          "quantity": "3"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "97.71",
+      "previous_hash": "441e31011ac9d8f1c2800631cf918b8f28d0d22bed3048d45b072b7614796ca7",
+      "reference_price": "105.12",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15274.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10510.28000000",
+          "equity": "15256.58381000",
+          "fees": "0.74619000",
+          "inventory": "45"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14885.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9824.91000000",
+          "equity": "14905.42649500",
+          "fees": "0.40350500",
+          "inventory": "52"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "97.26",
+              "quantity": "7"
+            },
+            "decision_seq": 3
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "97.26",
+              "quantity": "7"
+            },
+            "decision_seq": 3
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "97.91",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "97.51",
+              "quantity": "10"
+            },
+            "decision_seq": 3
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "97.91",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "97.51",
+              "quantity": "10"
+            },
+            "decision_seq": 3
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 3,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "15"
+      },
+      "customer_order": {
+        "kind": "informed",
+        "quantity": "7",
+        "reservation_price": "101.21",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.0541024",
+        "x_prev": "0.904"
+      },
+      "event_hash": "44b99f21771e924f32c16b3672c16b7c33690c6fa41b54a3f9572b22d4fd16a2",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.34268500",
+          "notional": "685.37000000",
+          "player_id": "B",
+          "price": "97.91",
+          "quantity": "7"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "105.49",
+      "previous_hash": "f802eee095f9cd26c7cf2ed0873dd9f455d36f3e1163fab55e6030f8a47b80bb",
+      "reference_price": "97.71",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14734.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10721.66000000",
+          "equity": "14792.47812000",
+          "fees": "0.85188000",
+          "inventory": "43"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15274.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10510.28000000",
+          "equity": "15256.58381000",
+          "fees": "0.74619000",
+          "inventory": "45"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "105.94",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 4
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.94",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 4
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "105.69",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.29",
+              "quantity": "10"
+            },
+            "decision_seq": 4
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.69",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.29",
+              "quantity": "10"
+            },
+            "decision_seq": 4
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 4,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "17"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "108.21",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "1.267102102439936",
+        "x_prev": "-0.0541024"
+      },
+      "event_hash": "3db02d08a7bc33ee4588abad6bfcc8a3071759d724a382a2c144dbe8a6337d26",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.10569000",
+          "notional": "211.38000000",
+          "player_id": "B",
+          "price": "105.69",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "94.69",
+      "previous_hash": "44b99f21771e924f32c16b3672c16b7c33690c6fa41b54a3f9572b22d4fd16a2",
+      "reference_price": "105.49",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14566.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11385.89000000",
+          "equity": "14672.22600500",
+          "fees": "1.18399500",
+          "inventory": "36"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14734.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10721.66000000",
+          "equity": "14792.47812000",
+          "fees": "0.85188000",
+          "inventory": "43"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "94.24",
+              "quantity": "7"
+            },
+            "decision_seq": 5
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "94.24",
+              "quantity": "7"
+            },
+            "decision_seq": 5
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "94.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "94.49",
+              "quantity": "10"
+            },
+            "decision_seq": 5
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "94.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "94.49",
+              "quantity": "10"
+            },
+            "decision_seq": 5
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 5,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "24"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "7",
+        "reservation_price": "96.50",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-1.2639975532107884908382827577344",
+        "x_prev": "1.267102102439936"
+      },
+      "event_hash": "3bd5583319380af126ac532feba99132c9e02a9e5652ca871faa2dd51ffc3b28",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.33211500",
+          "notional": "664.23000000",
+          "player_id": "B",
+          "price": "94.89",
+          "quantity": "7"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "91.32",
+      "previous_hash": "3db02d08a7bc33ee4588abad6bfcc8a3071759d724a382a2c144dbe8a6337d26",
+      "reference_price": "94.69",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14666.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12118.05000000",
+          "equity": "14729.73992500",
+          "fees": "1.55007500",
+          "inventory": "28"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14566.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11385.89000000",
+          "equity": "14672.22600500",
+          "fees": "1.18399500",
+          "inventory": "36"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "90.87",
+              "quantity": "7"
+            },
+            "decision_seq": 6
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "90.87",
+              "quantity": "7"
+            },
+            "decision_seq": 6
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "91.52",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "91.12",
+              "quantity": "10"
+            },
+            "decision_seq": 6
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "91.52",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "91.12",
+              "quantity": "10"
+            },
+            "decision_seq": 6
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 6,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "32"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "92.18",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.8566351096000233151986310116132787267172011664375",
+        "x_prev": "-1.2639975532107884908382827577344"
+      },
+      "event_hash": "d6c4c997ddae4de7b6eaa2d367bfb153ea642c44dcdaa70a2c1da5aaa8351430",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.36608000",
+          "notional": "732.16000000",
+          "player_id": "B",
+          "price": "91.52",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "93.33",
+      "previous_hash": "3bd5583319380af126ac532feba99132c9e02a9e5652ca871faa2dd51ffc3b28",
+      "reference_price": "91.32",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15403.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11466.14000000",
+          "equity": "15246.71397000",
+          "fees": "1.87603000",
+          "inventory": "35"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14666.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12118.05000000",
+          "equity": "14729.73992500",
+          "fees": "1.55007500",
+          "inventory": "28"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "92.88",
+              "quantity": "7"
+            },
+            "decision_seq": 7
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "92.88",
+              "quantity": "7"
+            },
+            "decision_seq": 7
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "93.53",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "93.13",
+              "quantity": "10"
+            },
+            "decision_seq": 7
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "93.53",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "93.13",
+              "quantity": "10"
+            },
+            "decision_seq": 7
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 7,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "39"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "7",
+        "reservation_price": "92.15",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.4065524613624580876051417708105975877398027227122",
+        "x_prev": "-0.8566351096000233151986310116132787267172011664375"
+      },
+      "event_hash": "e39b0be5cf1bc21877f87b22f21b13099a9acd9bc0e437fca194ff62fde25165",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.32595500",
+          "notional": "651.91000000",
+          "player_id": "B",
+          "price": "93.13",
+          "quantity": "7"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.07",
+      "previous_hash": "d6c4c997ddae4de7b6eaa2d367bfb153ea642c44dcdaa70a2c1da5aaa8351430",
+      "reference_price": "93.33",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15421.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10603.18000000",
+          "equity": "15262.93249000",
+          "fees": "2.30751000",
+          "inventory": "43"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15403.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11466.14000000",
+          "equity": "15246.71397000",
+          "fees": "1.87603000",
+          "inventory": "35"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "107.62",
+              "quantity": "7"
+            },
+            "decision_seq": 8
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "107.62",
+              "quantity": "7"
+            },
+            "decision_seq": 8
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "108.27",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.87",
+              "quantity": "10"
+            },
+            "decision_seq": 8
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.27",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.87",
+              "quantity": "10"
+            },
+            "decision_seq": 8
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 8,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "47"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "106.66",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.51161060174417083878585733224203914506553523863109",
+        "x_prev": "-0.4065524613624580876051417708105975877398027227122"
+      },
+      "event_hash": "f58e93663779747ea5e8b0766c8f4be476e8e65e138cfa1a0277e348dcab2e8b",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.43148000",
+          "notional": "862.96000000",
+          "player_id": "B",
+          "price": "107.87",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.42",
+      "previous_hash": "e39b0be5cf1bc21877f87b22f21b13099a9acd9bc0e437fca194ff62fde25165",
+      "reference_price": "108.07",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15273.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11363.52000000",
+          "equity": "15157.75232000",
+          "fees": "2.68768000",
+          "inventory": "36"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15421.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10603.18000000",
+          "equity": "15262.93249000",
+          "fees": "2.30751000",
+          "inventory": "43"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "108.87",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 9
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.87",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 9
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "108.62",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.22",
+              "quantity": "10"
+            },
+            "decision_seq": 9
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.62",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.22",
+              "quantity": "10"
+            },
+            "decision_seq": 9
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 9,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "54"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "7",
+        "reservation_price": "109.96",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.51159069064741695932501271240177796613803813763446",
+        "x_prev": "0.51161060174417083878585733224203914506553523863109"
+      },
+      "event_hash": "6cfe243c0465a69f4ded4c2da47edaeebfd94bdab28ae79e3b375785acf55c0f",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.38017000",
+          "notional": "760.34000000",
+          "player_id": "B",
+          "price": "108.62",
+          "quantity": "7"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "105.47",
+      "previous_hash": "f58e93663779747ea5e8b0766c8f4be476e8e65e138cfa1a0277e348dcab2e8b",
+      "reference_price": "108.42",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15297.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11152.98000000",
+          "equity": "15176.28705000",
+          "fees": "2.79295000",
+          "inventory": "38"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15273.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11363.52000000",
+          "equity": "15157.75232000",
+          "fees": "2.68768000",
+          "inventory": "36"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "105.92",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 10
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.92",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 10
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "105.67",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.27",
+              "quantity": "10"
+            },
+            "decision_seq": 10
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.67",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.27",
+              "quantity": "10"
+            },
+            "decision_seq": 10
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 10,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "56"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "104.95",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.78706813186330974202035046693239650126777652237221",
+        "x_prev": "0.51159069064741695932501271240177796613803813763446"
+      },
+      "event_hash": "097a4a20d1787140a3b768a5858d1c2bbce10c75ebe054e408dfc07f08c5d0b7",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.10527000",
+          "notional": "210.54000000",
+          "player_id": "B",
+          "price": "105.27",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "105.95",
+      "previous_hash": "6cfe243c0465a69f4ded4c2da47edaeebfd94bdab28ae79e3b375785acf55c0f",
+      "reference_price": "105.47",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15402.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11047.23000000",
+          "equity": "15258.33417500",
+          "fees": "2.84582500",
+          "inventory": "39"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15297.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11152.98000000",
+          "equity": "15176.28705000",
+          "fees": "2.79295000",
+          "inventory": "38"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "105.50",
+              "quantity": "7"
+            },
+            "decision_seq": 11
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "105.50",
+              "quantity": "7"
+            },
+            "decision_seq": 11
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "106.15",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.75",
+              "quantity": "10"
+            },
+            "decision_seq": 11
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.15",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.75",
+              "quantity": "10"
+            },
+            "decision_seq": 11
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 11,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "57"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "1",
+        "reservation_price": "104.17",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.28621046532150462300114028206070755315071833495121",
+        "x_prev": "0.78706813186330974202035046693239650126777652237221"
+      },
+      "event_hash": "606eed8948b4bf30de3fe56f149308726cb99b966bc5145a0aadc71822a25852",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.05287500",
+          "notional": "105.75000000",
+          "player_id": "B",
+          "price": "105.75",
+          "quantity": "1"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.05",
+      "previous_hash": "097a4a20d1787140a3b768a5858d1c2bbce10c75ebe054e408dfc07f08c5d0b7",
+      "reference_price": "105.95",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14794.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10076.58000000",
+          "equity": "14675.48885000",
+          "fees": "3.33115000",
+          "inventory": "48"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15402.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11047.23000000",
+          "equity": "15258.33417500",
+          "fees": "2.84582500",
+          "inventory": "39"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "108.50",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 12
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.50",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 12
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "108.25",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.85",
+              "quantity": "10"
+            },
+            "decision_seq": 12
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.25",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.85",
+              "quantity": "10"
+            },
+            "decision_seq": 12
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 12,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "66"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "9",
+        "reservation_price": "106.39",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "1.1214374369156198420447368725794579254634330231569",
+        "x_prev": "0.28621046532150462300114028206070755315071833495121"
+      },
+      "event_hash": "b201a12dd2f3672e73be0c219a44bfe8c9070d9b2a3e3fc4ff519bf4426edfac",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.48532500",
+          "notional": "970.65000000",
+          "player_id": "B",
+          "price": "107.85",
+          "quantity": "9"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "95.88",
+      "previous_hash": "606eed8948b4bf30de3fe56f149308726cb99b966bc5145a0aadc71822a25852",
+      "reference_price": "108.05",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15418.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10364.82000000",
+          "equity": "15237.54473000",
+          "fees": "3.47527000",
+          "inventory": "45"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14794.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10076.58000000",
+          "equity": "14675.48885000",
+          "fees": "3.33115000",
+          "inventory": "48"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "95.43",
+              "quantity": "7"
+            },
+            "decision_seq": 13
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "95.43",
+              "quantity": "7"
+            },
+            "decision_seq": 13
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "96.08",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "95.68",
+              "quantity": "10"
+            },
+            "decision_seq": 13
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "96.08",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "95.68",
+              "quantity": "10"
+            },
+            "decision_seq": 13
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 13,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "69"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "3",
+        "reservation_price": "96.95",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.67480755528577337911081069249069300078981919272494",
+        "x_prev": "1.1214374369156198420447368725794579254634330231569"
+      },
+      "event_hash": "71fae96237470e805db6cc1d031644de46fa3f1dd2319fc763a79a419653e891",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.14412000",
+          "notional": "288.24000000",
+          "player_id": "B",
+          "price": "96.08",
+          "quantity": "3"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.36",
+      "previous_hash": "b201a12dd2f3672e73be0c219a44bfe8c9070d9b2a3e3fc4ff519bf4426edfac",
+      "reference_price": "95.88",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15033.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11341.86000000",
+          "equity": "14961.65621000",
+          "fees": "3.96379000",
+          "inventory": "36"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15418.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10364.82000000",
+          "equity": "15237.54473000",
+          "fees": "3.47527000",
+          "inventory": "45"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "108.81",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 14
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.81",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 14
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "108.56",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.16",
+              "quantity": "10"
+            },
+            "decision_seq": 14
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.56",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.16",
+              "quantity": "10"
+            },
+            "decision_seq": 14
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 14,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "78"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "9",
+        "reservation_price": "111.71",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.69891989973561901882189620297305785982707786852668",
+        "x_prev": "-0.67480755528577337911081069249069300078981919272494"
+      },
+      "event_hash": "cf9d9841f3917a012bac2db8f3006e93882db6799194cb4c2331afb897fd9f09",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.48852000",
+          "notional": "977.04000000",
+          "player_id": "B",
+          "price": "108.56",
+          "quantity": "9"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "100.66",
+      "previous_hash": "71fae96237470e805db6cc1d031644de46fa3f1dd2319fc763a79a419653e891",
+      "reference_price": "108.36",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15708.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11947.02000000",
+          "equity": "15367.85363000",
+          "fees": "4.26637000",
+          "inventory": "30"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15033.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11341.86000000",
+          "equity": "14961.65621000",
+          "fees": "3.96379000",
+          "inventory": "36"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "100.21",
+              "quantity": "7"
+            },
+            "decision_seq": 15
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "100.21",
+              "quantity": "7"
+            },
+            "decision_seq": 15
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "100.86",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.46",
+              "quantity": "10"
+            },
+            "decision_seq": 15
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "100.86",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.46",
+              "quantity": "10"
+            },
+            "decision_seq": 15
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 15,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "84"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "104.03",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.11367309666924114716422669418215043006402813734724",
+        "x_prev": "0.69891989973561901882189620297305785982707786852668"
+      },
+      "event_hash": "c4e87b5c7a2dd0975df809c6367b6ef9737fc07bca877613ceca5ee1f4f01db2",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.30258000",
+          "notional": "605.16000000",
+          "player_id": "B",
+          "price": "100.86",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "114.17",
+      "previous_hash": "cf9d9841f3917a012bac2db8f3006e93882db6799194cb4c2331afb897fd9f09",
+      "reference_price": "100.66",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14448.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12633.24000000",
+          "equity": "14763.67052000",
+          "fees": "4.60948000",
+          "inventory": "24"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15708.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11947.02000000",
+          "equity": "15367.85363000",
+          "fees": "4.26637000",
+          "inventory": "30"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "113.72",
+              "quantity": "7"
+            },
+            "decision_seq": 16
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "113.72",
+              "quantity": "7"
+            },
+            "decision_seq": 16
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "114.37",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "113.97",
+              "quantity": "10"
+            },
+            "decision_seq": 16
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "114.37",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "113.97",
+              "quantity": "10"
+            },
+            "decision_seq": 16
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 16,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "90"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "116.41",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "1.1915857678517612057470337100452665374947124060745",
+        "x_prev": "0.11367309666924114716422669418215043006402813734724"
+      },
+      "event_hash": "3ff3f9eb9b36e426c6bb42e82ae4f2954dcb302b51fe010e6983eaf6bf66b03c",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.34311000",
+          "notional": "686.22000000",
+          "player_id": "B",
+          "price": "114.37",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "88.96",
+      "previous_hash": "c4e87b5c7a2dd0975df809c6367b6ef9737fc07bca877613ceca5ee1f4f01db2",
+      "reference_price": "114.17",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14963.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12011.92000000",
+          "equity": "15084.36986000",
+          "fees": "4.92014000",
+          "inventory": "31"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14448.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12633.24000000",
+          "equity": "14763.67052000",
+          "fees": "4.60948000",
+          "inventory": "24"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "89.41",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 17
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "89.41",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 17
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "89.16",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "88.76",
+              "quantity": "10"
+            },
+            "decision_seq": 17
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "89.16",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "88.76",
+              "quantity": "10"
+            },
+            "decision_seq": 17
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 17,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "97"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "7",
+        "reservation_price": "88.01",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.95372537000484754448901512381285652832484898812363",
+        "x_prev": "1.1915857678517612057470337100452665374947124060745"
+      },
+      "event_hash": "432a04798d159f58ba0b5c9e6941642b4f1729c4504f39bab9efcae7071f0195",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.31066000",
+          "notional": "621.32000000",
+          "player_id": "B",
+          "price": "88.76",
+          "quantity": "7"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "99.27",
+      "previous_hash": "3ff3f9eb9b36e426c6bb42e82ae4f2954dcb302b51fe010e6983eaf6bf66b03c",
+      "reference_price": "88.96",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15385.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12111.39000000",
+          "equity": "15337.72012500",
+          "fees": "4.96987500",
+          "inventory": "30"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14963.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12011.92000000",
+          "equity": "15084.36986000",
+          "fees": "4.92014000",
+          "inventory": "31"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "99.72",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 18
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "99.72",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 18
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "99.47",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "99.07",
+              "quantity": "10"
+            },
+            "decision_seq": 18
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "99.47",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "99.07",
+              "quantity": "10"
+            },
+            "decision_seq": 18
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 18,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "98"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "1",
+        "reservation_price": "100.97",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.08404681640829166847222046714774305893755863067615",
+        "x_prev": "-0.95372537000484754448901512381285652832484898812363"
+      },
+      "event_hash": "93231db3068aac111e2c9d54dbf4d1d481ee0f6866e9e5fd44bc20611db6af67",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.04973500",
+          "notional": "99.47000000",
+          "player_id": "B",
+          "price": "99.47",
+          "quantity": "1"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.71",
+      "previous_hash": "432a04798d159f58ba0b5c9e6941642b4f1729c4504f39bab9efcae7071f0195",
+      "reference_price": "99.27",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14965.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11466.33000000",
+          "equity": "15036.19759500",
+          "fees": "5.29240500",
+          "inventory": "36"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15385.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "12111.39000000",
+          "equity": "15337.72012500",
+          "fees": "4.96987500",
+          "inventory": "30"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "107.26",
+              "quantity": "7"
+            },
+            "decision_seq": 19
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "107.26",
+              "quantity": "7"
+            },
+            "decision_seq": 19
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.91",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.51",
+              "quantity": "10"
+            },
+            "decision_seq": 19
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.91",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.51",
+              "quantity": "10"
+            },
+            "decision_seq": 19
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 19,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "104"
+      },
+      "customer_order": {
+        "kind": "informed",
+        "quantity": "6",
+        "reservation_price": "105.01",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.70399297471082901676354294049614048151153485339846",
+        "x_prev": "0.08404681640829166847222046714774305893755863067615"
+      },
+      "event_hash": "fc60fb63c026e79adfac3b598c6a30188b6009928e61e9f6b262fff6b16a7f8e",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.32253000",
+          "notional": "645.06000000",
+          "player_id": "B",
+          "price": "107.51",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "99.31",
+      "previous_hash": "93231db3068aac111e2c9d54dbf4d1d481ee0f6866e9e5fd44bc20611db6af67",
+      "reference_price": "107.71",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15317.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11069.89000000",
+          "equity": "15318.39937500",
+          "fees": "5.49062500",
+          "inventory": "40"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14965.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11466.33000000",
+          "equity": "15036.19759500",
+          "fees": "5.29240500",
+          "inventory": "36"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "99.76",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 20
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "99.76",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 20
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "99.51",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "99.11",
+              "quantity": "10"
+            },
+            "decision_seq": 20
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "99.51",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "99.11",
+              "quantity": "10"
+            },
+            "decision_seq": 20
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 20,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "108"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "98.77",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.33136549310340477958706223416365529799546716277486",
+        "x_prev": "0.70399297471082901676354294049614048151153485339846"
+      },
+      "event_hash": "4ddee9e70906009bc25adabff77e7cb2576f1c6cc970e3255bf2c6122a48d2b3",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.19822000",
+          "notional": "396.44000000",
+          "player_id": "B",
+          "price": "99.11",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "106.35",
+      "previous_hash": "fc60fb63c026e79adfac3b598c6a30188b6009928e61e9f6b262fff6b16a7f8e",
+      "reference_price": "99.31",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14589.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10857.59000000",
+          "equity": "14707.17322500",
+          "fees": "5.59677500",
+          "inventory": "42"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15317.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11069.89000000",
+          "equity": "15318.39937500",
+          "fees": "5.49062500",
+          "inventory": "40"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "106.80",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 21
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.80",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 21
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "106.55",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.15",
+              "quantity": "10"
+            },
+            "decision_seq": 21
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.55",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.15",
+              "quantity": "10"
+            },
+            "decision_seq": 21
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 21,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "110"
+      },
+      "customer_order": {
+        "kind": "informed",
+        "quantity": "2",
+        "reservation_price": "104.04",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "1.0574735663857210642681083161239146275322086031029",
+        "x_prev": "0.33136549310340477958706223416365529799546716277486"
+      },
+      "event_hash": "a77ef2a320c0bff8cfe628a05fff0cfd62626405f64e9474697aee7d704e401a",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.10615000",
+          "notional": "212.30000000",
+          "player_id": "B",
+          "price": "106.15",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "91.79",
+      "previous_hash": "4ddee9e70906009bc25adabff77e7cb2576f1c6cc970e3255bf2c6122a48d2b3",
+      "reference_price": "106.35",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15334.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11041.57000000",
+          "equity": "15303.48123500",
+          "fees": "5.68876500",
+          "inventory": "40"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14589.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10857.59000000",
+          "equity": "14707.17322500",
+          "fees": "5.59677500",
+          "inventory": "42"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "91.34",
+              "quantity": "7"
+            },
+            "decision_seq": 22
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "91.34",
+              "quantity": "7"
+            },
+            "decision_seq": 22
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "91.99",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "91.59",
+              "quantity": "10"
+            },
+            "decision_seq": 22
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "91.99",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "91.59",
+              "quantity": "10"
+            },
+            "decision_seq": 22
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 22,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "112"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "94.28",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.46614083311532898680832707209134605235410587660904",
+        "x_prev": "1.0574735663857210642681083161239146275322086031029"
+      },
+      "event_hash": "81b34281b03d26c37645256388730146591053905abd3e5ac25b04f3abc5b32d",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.09199000",
+          "notional": "183.98000000",
+          "player_id": "B",
+          "price": "91.99",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "106.69",
+      "previous_hash": "a77ef2a320c0bff8cfe628a05fff0cfd62626405f64e9474697aee7d704e401a",
+      "reference_price": "91.79",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14650.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11255.35000000",
+          "equity": "14783.55434500",
+          "fees": "5.79565500",
+          "inventory": "38"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15334.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11041.57000000",
+          "equity": "15303.48123500",
+          "fees": "5.68876500",
+          "inventory": "40"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "107.14",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 23
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.14",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 23
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "106.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.49",
+              "quantity": "10"
+            },
+            "decision_seq": 23
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.49",
+              "quantity": "10"
+            },
+            "decision_seq": 23
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 23,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "114"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "108.25",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "1.0130398830992821347181485499405339138994174443844",
+        "x_prev": "-0.46614083311532898680832707209134605235410587660904"
+      },
+      "event_hash": "96ba6faaa8985949dc02ceffccda6bd54ab3f3d1bcbcb326ad48b2534f1882e4",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.10689000",
+          "notional": "213.78000000",
+          "player_id": "B",
+          "price": "106.89",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "93.00",
+      "previous_hash": "81b34281b03d26c37645256388730146591053905abd3e5ac25b04f3abc5b32d",
+      "reference_price": "106.69",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15209.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10327.35000000",
+          "equity": "15321.73034500",
+          "fees": "6.25965500",
+          "inventory": "48"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14650.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11255.35000000",
+          "equity": "14783.55434500",
+          "fees": "5.79565500",
+          "inventory": "38"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "93.45",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 24
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "93.45",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 24
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "93.20",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "92.80",
+              "quantity": "10"
+            },
+            "decision_seq": 24
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "93.20",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "92.80",
+              "quantity": "10"
+            },
+            "decision_seq": 24
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 24,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "124"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "10",
+        "reservation_price": "91.29",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.57659197658432879464511548683473222507990320343331",
+        "x_prev": "1.0130398830992821347181485499405339138994174443844"
+      },
+      "event_hash": "857e5fed03c2eb68c1387294ac663a24963b0e03d3777bfd53176391d393d7a9",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.46400000",
+          "notional": "928.00000000",
+          "player_id": "B",
+          "price": "92.80",
+          "quantity": "10"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "104.18",
+      "previous_hash": "96ba6faaa8985949dc02ceffccda6bd54ab3f3d1bcbcb326ad48b2534f1882e4",
+      "reference_price": "93.00",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14763.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10223.37000000",
+          "equity": "14885.28835500",
+          "fees": "6.31164500",
+          "inventory": "49"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15209.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10327.35000000",
+          "equity": "15321.73034500",
+          "fees": "6.25965500",
+          "inventory": "48"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "104.63",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 25
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "104.63",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 25
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "104.38",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.98",
+              "quantity": "10"
+            },
+            "decision_seq": 25
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "104.38",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.98",
+              "quantity": "10"
+            },
+            "decision_seq": 25
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 25,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "125"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "1",
+        "reservation_price": "101.20",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.83847033448379220939067736818390854138001335323909",
+        "x_prev": "-0.57659197658432879464511548683473222507990320343331"
+      },
+      "event_hash": "07e3da8035d81ee3c1b9f943b2b735c1bd10fc853da1579ea19b29a291fc5184",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.05199000",
+          "notional": "103.98000000",
+          "player_id": "B",
+          "price": "103.98",
+          "quantity": "1"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "95.27",
+      "previous_hash": "857e5fed03c2eb68c1387294ac663a24963b0e03d3777bfd53176391d393d7a9",
+      "reference_price": "104.18",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15533.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10605.25000000",
+          "equity": "15578.89741500",
+          "fees": "6.50258500",
+          "inventory": "45"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14763.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10223.37000000",
+          "equity": "14885.28835500",
+          "fees": "6.31164500",
+          "inventory": "49"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "95.72",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 26
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "95.72",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 26
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "95.47",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "95.07",
+              "quantity": "10"
+            },
+            "decision_seq": 26
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "95.47",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "95.07",
+              "quantity": "10"
+            },
+            "decision_seq": 26
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 26,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "129"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "98.13",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.15722309550840598022552923894910563935143702581404",
+        "x_prev": "0.83847033448379220939067736818390854138001335323909"
+      },
+      "event_hash": "7a739a2e7c17130f546b9fea7b1d15a8d5271e5b8c968b54f6ab03fa53028a5e",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.19094000",
+          "notional": "381.88000000",
+          "player_id": "B",
+          "price": "95.47",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "110.67",
+      "previous_hash": "07e3da8035d81ee3c1b9f943b2b735c1bd10fc853da1579ea19b29a291fc5184",
+      "reference_price": "95.27",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14559.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11048.73000000",
+          "equity": "14780.79567500",
+          "fees": "6.72432500",
+          "inventory": "41"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15533.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10605.25000000",
+          "equity": "15578.89741500",
+          "fees": "6.50258500",
+          "inventory": "45"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "111.12",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 27
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "111.12",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 27
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "110.87",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "110.47",
+              "quantity": "10"
+            },
+            "decision_seq": 27
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "110.87",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "110.47",
+              "quantity": "10"
+            },
+            "decision_seq": 27
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 27,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "133"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "113.54",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "1.2169343578793941746181496995448546227701845484390",
+        "x_prev": "-0.15722309550840598022552923894910563935143702581404"
+      },
+      "event_hash": "4e2a3f6e1f9ab1c2dfdf454b6c77a3d2a6770b8b7853f6af78eb1a385f5bc129",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.22174000",
+          "notional": "443.48000000",
+          "player_id": "B",
+          "price": "110.87",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "91.19",
+      "previous_hash": "7a739a2e7c17130f546b9fea7b1d15a8d5271e5b8c968b54f6ab03fa53028a5e",
+      "reference_price": "110.67",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15058.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11231.51000000",
+          "equity": "15170.32428500",
+          "fees": "6.81571500",
+          "inventory": "39"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14559.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11048.73000000",
+          "equity": "14780.79567500",
+          "fees": "6.72432500",
+          "inventory": "41"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "90.74",
+              "quantity": "7"
+            },
+            "decision_seq": 28
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "90.74",
+              "quantity": "7"
+            },
+            "decision_seq": 28
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "91.39",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "90.99",
+              "quantity": "10"
+            },
+            "decision_seq": 28
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "91.39",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "90.99",
+              "quantity": "10"
+            },
+            "decision_seq": 28
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 28,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "135"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "91.87",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-1.1204678525947885801780809621850135516253253368782",
+        "x_prev": "1.2169343578793941746181496995448546227701845484390"
+      },
+      "event_hash": "fc380e15ae3520862d9b7710f47158f1484a652af33f08251f0a9fd99cebd583",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.09139000",
+          "notional": "182.78000000",
+          "player_id": "B",
+          "price": "91.39",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "101.17",
+      "previous_hash": "4e2a3f6e1f9ab1c2dfdf454b6c77a3d2a6770b8b7853f6af78eb1a385f5bc129",
+      "reference_price": "91.19",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15350.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10827.63000000",
+          "equity": "15421.61234500",
+          "fees": "7.01765500",
+          "inventory": "43"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15058.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11231.51000000",
+          "equity": "15170.32428500",
+          "fees": "6.81571500",
+          "inventory": "39"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "101.62",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 29
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.62",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 29
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "101.37",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.97",
+              "quantity": "10"
+            },
+            "decision_seq": 29
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.37",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.97",
+              "quantity": "10"
+            },
+            "decision_seq": 29
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 29,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "139"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "98.97",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.39254718481390936562337755619920304674335902686040",
+        "x_prev": "-1.1204678525947885801780809621850135516253253368782"
+      },
+      "event_hash": "1e85c6d26ac88a06dbc0b023a9879297aa33df5d014438668d936c15a8ba97f8",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.20194000",
+          "notional": "403.88000000",
+          "player_id": "B",
+          "price": "100.97",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.00",
+      "previous_hash": "fc380e15ae3520862d9b7710f47158f1484a652af33f08251f0a9fd99cebd583",
+      "reference_price": "101.17",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15085.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11470.83000000",
+          "equity": "15226.39074500",
+          "fees": "7.33925500",
+          "inventory": "37"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15350.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10827.63000000",
+          "equity": "15421.61234500",
+          "fees": "7.01765500",
+          "inventory": "43"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "107.45",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 30
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.45",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 30
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.20",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.80",
+              "quantity": "10"
+            },
+            "decision_seq": 30
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.20",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.80",
+              "quantity": "10"
+            },
+            "decision_seq": 30
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 30,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "145"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "107.72",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.44812903499410770400043473380183057506728384880174",
+        "x_prev": "-0.39254718481390936562337755619920304674335902686040"
+      },
+      "event_hash": "6b8595d0c628ce31896c19f66eec25fc24d734210b2ec2f23ce370b268a763f9",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.32160000",
+          "notional": "643.20000000",
+          "player_id": "B",
+          "price": "107.20",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "101.70",
+      "previous_hash": "1e85c6d26ac88a06dbc0b023a9879297aa33df5d014438668d936c15a8ba97f8",
+      "reference_price": "107.00",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15336.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10861.83000000",
+          "equity": "15443.14624500",
+          "fees": "7.64375500",
+          "inventory": "43"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15085.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "11470.83000000",
+          "equity": "15226.39074500",
+          "fees": "7.33925500",
+          "inventory": "37"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "101.25",
+              "quantity": "7"
+            },
+            "decision_seq": 31
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "101.25",
+              "quantity": "7"
+            },
+            "decision_seq": 31
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "101.90",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "101.50",
+              "quantity": "10"
+            },
+            "decision_seq": 31
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.90",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "101.50",
+              "quantity": "10"
+            },
+            "decision_seq": 31
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 31,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "151"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "99.72",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.60108835974917690028955284717776458885415696294651",
+        "x_prev": "0.44812903499410770400043473380183057506728384880174"
+      },
+      "event_hash": "0104a8673ef3a664f2f316ad13881aa490dfdc4e90e7e509f7c1dc66127c046a",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.30450000",
+          "notional": "609.00000000",
+          "player_id": "B",
+          "price": "101.50",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "106.72",
+      "previous_hash": "6b8595d0c628ce31896c19f66eec25fc24d734210b2ec2f23ce370b268a763f9",
+      "reference_price": "101.70",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15133.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10009.67000000",
+          "equity": "15237.26016500",
+          "fees": "8.06983500",
+          "inventory": "51"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15336.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10861.83000000",
+          "equity": "15443.14624500",
+          "fees": "7.64375500",
+          "inventory": "43"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "107.17",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 32
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.17",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 32
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "106.92",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.52",
+              "quantity": "10"
+            },
+            "decision_seq": 32
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.92",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.52",
+              "quantity": "10"
+            },
+            "decision_seq": 32
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 32,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "159"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "103.56",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.62860860778189403894624693293129268557790225898655",
+        "x_prev": "0.60108835974917690028955284717776458885415696294651"
+      },
+      "event_hash": "fedcd3b7544aeaab08900b4ab2b4a92d886d9c70722d1a65e3d6c1cbeee5e452",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.42608000",
+          "notional": "852.16000000",
+          "player_id": "B",
+          "price": "106.52",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "102.66",
+      "previous_hash": "0104a8673ef3a664f2f316ad13881aa490dfdc4e90e7e509f7c1dc66127c046a",
+      "reference_price": "106.72",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15350.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9189.99000000",
+          "equity": "15495.10032500",
+          "fees": "8.47967500",
+          "inventory": "59"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15133.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "10009.67000000",
+          "equity": "15237.26016500",
+          "fees": "8.06983500",
+          "inventory": "51"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "103.11",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 33
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "103.11",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 33
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "102.86",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "102.46",
+              "quantity": "10"
+            },
+            "decision_seq": 33
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "102.86",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "102.46",
+              "quantity": "10"
+            },
+            "decision_seq": 33
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 33,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "167"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "101.55",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.62711821343626553722887296007148971385221284579716",
+        "x_prev": "0.62860860778189403894624693293129268557790225898655"
+      },
+      "event_hash": "9ea16f7beaee8d4368ad09b8d0449d43cd225c627f5379deb23baef0fe0a16b7",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.40984000",
+          "notional": "819.68000000",
+          "player_id": "B",
+          "price": "102.46",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.01",
+      "previous_hash": "fedcd3b7544aeaab08900b4ab2b4a92d886d9c70722d1a65e3d6c1cbeee5e452",
+      "reference_price": "102.66",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15414.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9404.41000000",
+          "equity": "15567.78311500",
+          "fees": "8.58688500",
+          "inventory": "57"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15350.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9189.99000000",
+          "equity": "15495.10032500",
+          "fees": "8.47967500",
+          "inventory": "59"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "106.56",
+              "quantity": "7"
+            },
+            "decision_seq": 34
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "106.56",
+              "quantity": "7"
+            },
+            "decision_seq": 34
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.21",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.81",
+              "quantity": "10"
+            },
+            "decision_seq": 34
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.21",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.81",
+              "quantity": "10"
+            },
+            "decision_seq": 34
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 34,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "169"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "2",
+        "reservation_price": "110.07",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.63799442726167731533613922168900346299813727690744",
+        "x_prev": "0.62711821343626553722887296007148971385221284579716"
+      },
+      "event_hash": "de17c2524f4f745ebadb97209237a28f90b6bb76109d7c0244e1352738d36f4f",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.10721000",
+          "notional": "214.42000000",
+          "player_id": "B",
+          "price": "107.21",
+          "quantity": "2"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.28",
+      "previous_hash": "9ea16f7beaee8d4368ad09b8d0449d43cd225c627f5379deb23baef0fe0a16b7",
+      "reference_price": "107.01",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15384.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8755.93000000",
+          "equity": "15531.48887500",
+          "fees": "8.91112500",
+          "inventory": "63"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15414.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "9404.41000000",
+          "equity": "15567.78311500",
+          "fees": "8.58688500",
+          "inventory": "57"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "107.83",
+              "quantity": "7"
+            },
+            "decision_seq": 35
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "107.83",
+              "quantity": "7"
+            },
+            "decision_seq": 35
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "108.48",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.08",
+              "quantity": "10"
+            },
+            "decision_seq": 35
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.48",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "108.08",
+              "quantity": "10"
+            },
+            "decision_seq": 35
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 35,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "175"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "107.38",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.61828381912714172767381718934094111138949308807970",
+        "x_prev": "0.63799442726167731533613922168900346299813727690744"
+      },
+      "event_hash": "69e6e7650de57c6b1ae2832f97698e732eb1432e4668f87641fc0216ab8d4759",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.32424000",
+          "notional": "648.48000000",
+          "player_id": "B",
+          "price": "108.08",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.69",
+      "previous_hash": "de17c2524f4f745ebadb97209237a28f90b6bb76109d7c0244e1352738d36f4f",
+      "reference_price": "108.28",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15060.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7788.52000000",
+          "equity": "15066.24517000",
+          "fees": "9.39483000",
+          "inventory": "72"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15384.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8755.93000000",
+          "equity": "15531.48887500",
+          "fees": "8.91112500",
+          "inventory": "63"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "108.14",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 36
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "108.14",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 36
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.49",
+              "quantity": "10"
+            },
+            "decision_seq": 36
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "107.49",
+              "quantity": "10"
+            },
+            "decision_seq": 36
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 36,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "184"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "9",
+        "reservation_price": "105.43",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.65621349478628144494501884125048785295433813905811",
+        "x_prev": "0.61828381912714172767381718934094111138949308807970"
+      },
+      "event_hash": "6e02940df828eea842868c0c4d96f9ae3b37a257f50cb81b299c90f169050e42",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.48370500",
+          "notional": "967.41000000",
+          "player_id": "B",
+          "price": "107.49",
+          "quantity": "9"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "101.21",
+      "previous_hash": "69e6e7650de57c6b1ae2832f97698e732eb1432e4668f87641fc0216ab8d4759",
+      "reference_price": "107.69",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15209.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7384.48000000",
+          "equity": "15292.56315000",
+          "fees": "9.59685000",
+          "inventory": "76"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15060.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7788.52000000",
+          "equity": "15066.24517000",
+          "fees": "9.39483000",
+          "inventory": "72"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "101.66",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 37
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.66",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 37
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "101.41",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "101.01",
+              "quantity": "10"
+            },
+            "decision_seq": 37
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.41",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "101.01",
+              "quantity": "10"
+            },
+            "decision_seq": 37
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 37,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "188"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "99.01",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.58262253470266748312334077707564586333394161121844",
+        "x_prev": "0.65621349478628144494501884125048785295433813905811"
+      },
+      "event_hash": "6f30203abee6357eaa84cc03abb2f3598e7d943f5ee9e30246c7e31e25e7d3a9",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.20202000",
+          "notional": "404.04000000",
+          "player_id": "B",
+          "price": "101.01",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "104.18",
+      "previous_hash": "6e02940df828eea842868c0c4d96f9ae3b37a257f50cb81b299c90f169050e42",
+      "reference_price": "101.21",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15354.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "6552.64000000",
+          "equity": "15537.34723000",
+          "fees": "10.01277000",
+          "inventory": "84"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15209.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7384.48000000",
+          "equity": "15292.56315000",
+          "fees": "9.59685000",
+          "inventory": "76"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "104.63",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 38
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "104.63",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 38
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "104.38",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.98",
+              "quantity": "10"
+            },
+            "decision_seq": 38
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "104.38",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.98",
+              "quantity": "10"
+            },
+            "decision_seq": 38
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 38,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "196"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "101.57",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.72163542331517906757744291716174247457351191396377",
+        "x_prev": "0.58262253470266748312334077707564586333394161121844"
+      },
+      "event_hash": "8930f5d87e1c8cfb68db40b39f9f37bbaadea76dda256daf15c6bd6d53c2eca7",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.41592000",
+          "notional": "831.84000000",
+          "player_id": "B",
+          "price": "103.98",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.08",
+      "previous_hash": "6f30203abee6357eaa84cc03abb2f3598e7d943f5ee9e30246c7e31e25e7d3a9",
+      "reference_price": "104.18",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15354.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7196.32000000",
+          "equity": "15538.22539000",
+          "fees": "10.33461000",
+          "inventory": "78"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15354.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "6552.64000000",
+          "equity": "15537.34723000",
+          "fees": "10.01277000",
+          "inventory": "84"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "107.53",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 39
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.53",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 39
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.28",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.88",
+              "quantity": "10"
+            },
+            "decision_seq": 39
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.28",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.88",
+              "quantity": "10"
+            },
+            "decision_seq": 39
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 39,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "202"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "6",
+        "reservation_price": "109.29",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.44572600255421148089234715723188252612175200334757",
+        "x_prev": "0.72163542331517906757744291716174247457351191396377"
+      },
+      "event_hash": "dcf8e265303dd577164ac5fbb31a66391ab5644ea28c3b8da0f7c70499824baf",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.32184000",
+          "notional": "643.68000000",
+          "player_id": "B",
+          "price": "107.28",
+          "quantity": "6"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "107.08",
+      "previous_hash": "8930f5d87e1c8cfb68db40b39f9f37bbaadea76dda256daf15c6bd6d53c2eca7",
+      "reference_price": "107.08",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15023.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "6341.28000000",
+          "equity": "14970.07787000",
+          "fees": "10.76213000",
+          "inventory": "86"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15354.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7196.32000000",
+          "equity": "15538.22539000",
+          "fees": "10.33461000",
+          "inventory": "78"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "106.63",
+              "quantity": "7"
+            },
+            "decision_seq": 40
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "106.63",
+              "quantity": "7"
+            },
+            "decision_seq": 40
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "107.28",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.88",
+              "quantity": "10"
+            },
+            "decision_seq": 40
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "107.28",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "106.88",
+              "quantity": "10"
+            },
+            "decision_seq": 40
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 40,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "210"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "105.24",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.93835028990041400484941554916518819409874321526948",
+        "x_prev": "0.44572600255421148089234715723188252612175200334757"
+      },
+      "event_hash": "84e63b74cad9350fc7c1310be31633898ff2ef74dedf41b2365e7cf198438302",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.42752000",
+          "notional": "855.04000000",
+          "player_id": "B",
+          "price": "106.88",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "100.46",
+      "previous_hash": "dcf8e265303dd577164ac5fbb31a66391ab5644ea28c3b8da0f7c70499824baf",
+      "reference_price": "107.08",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15282.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7247.22000000",
+          "equity": "15371.05490000",
+          "fees": "11.21510000",
+          "inventory": "77"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15023.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "6341.28000000",
+          "equity": "14970.07787000",
+          "fees": "10.76213000",
+          "inventory": "86"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "100.91",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 41
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "100.91",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 41
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "100.66",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.26",
+              "quantity": "10"
+            },
+            "decision_seq": 41
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "100.66",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.26",
+              "quantity": "10"
+            },
+            "decision_seq": 41
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 41,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "219"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "9",
+        "reservation_price": "101.34",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.09898397241240396294360953472367844336934718379603",
+        "x_prev": "0.93835028990041400484941554916518819409874321526948"
+      },
+      "event_hash": "72d045142ba17acbaac529a869e093e547210e10d960ae4b9e09bbf2a0b9f7eb",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.45297000",
+          "notional": "905.94000000",
+          "player_id": "B",
+          "price": "100.66",
+          "quantity": "9"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "105.65",
+      "previous_hash": "84e63b74cad9350fc7c1310be31633898ff2ef74dedf41b2365e7cf198438302",
+      "reference_price": "100.46",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14334.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7670.62000000",
+          "equity": "13987.56320000",
+          "fees": "11.42680000",
+          "inventory": "73"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15282.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7247.22000000",
+          "equity": "15371.05490000",
+          "fees": "11.21510000",
+          "inventory": "77"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "106.10",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 42
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "106.10",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 42
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "105.85",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.45",
+              "quantity": "10"
+            },
+            "decision_seq": 42
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "105.85",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "105.45",
+              "quantity": "10"
+            },
+            "decision_seq": 42
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 42,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "223"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "107.96",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "1.2677881294577688331187588300980642440488739137866",
+        "x_prev": "-0.09898397241240396294360953472367844336934718379603"
+      },
+      "event_hash": "93b2b04a1ceabb0810c80877e44e0828ba981197fce88507cc12dbd4ca745894",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.21170000",
+          "notional": "423.40000000",
+          "player_id": "B",
+          "price": "105.85",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "86.69",
+      "previous_hash": "72d045142ba17acbaac529a869e093e547210e10d960ae4b9e09bbf2a0b9f7eb",
+      "reference_price": "105.65",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14711.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7931.29000000",
+          "equity": "14515.83286500",
+          "fees": "11.55713500",
+          "inventory": "70"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14334.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7670.62000000",
+          "equity": "13987.56320000",
+          "fees": "11.42680000",
+          "inventory": "73"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "86.24",
+              "quantity": "7"
+            },
+            "decision_seq": 43
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "86.24",
+              "quantity": "7"
+            },
+            "decision_seq": 43
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "86.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "86.49",
+              "quantity": "10"
+            },
+            "decision_seq": 43
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "86.89",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "86.49",
+              "quantity": "10"
+            },
+            "decision_seq": 43
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 43,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "226"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "3",
+        "reservation_price": "89.34",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-1.2798966293953609854480606644562881451620299659219",
+        "x_prev": "1.2677881294577688331187588300980642440488739137866"
+      },
+      "event_hash": "c335a0deb1ad71ad472db9a044e4ea633f28739d8c3b38264110a8a162821776",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.13033500",
+          "notional": "260.67000000",
+          "player_id": "B",
+          "price": "86.89",
+          "quantity": "3"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "94.23",
+      "previous_hash": "93b2b04a1ceabb0810c80877e44e0828ba981197fce88507cc12dbd4ca745894",
+      "reference_price": "86.69",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14677.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7461.14000000",
+          "equity": "14465.59779000",
+          "fees": "11.79221000",
+          "inventory": "75"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14711.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7931.29000000",
+          "equity": "14515.83286500",
+          "fees": "11.55713500",
+          "inventory": "70"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "93.78",
+              "quantity": "7"
+            },
+            "decision_seq": 44
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "93.78",
+              "quantity": "7"
+            },
+            "decision_seq": 44
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "94.43",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "94.03",
+              "quantity": "10"
+            },
+            "decision_seq": 44
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "94.43",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "94.03",
+              "quantity": "10"
+            },
+            "decision_seq": 44
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 44,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "231"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "5",
+        "reservation_price": "92.21",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.91305309587531778671986130058111629942366420005772",
+        "x_prev": "-1.2798966293953609854480606644562881451620299659219"
+      },
+      "event_hash": "7d0450d9a310551ad929a200c618ce5a842f7aae85ac075619651e3b02c5375b",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.23507500",
+          "notional": "470.15000000",
+          "player_id": "B",
+          "price": "94.03",
+          "quantity": "5"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "93.55",
+      "previous_hash": "c335a0deb1ad71ad472db9a044e4ea633f28739d8c3b38264110a8a162821776",
+      "reference_price": "94.23",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15040.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8211.14000000",
+          "equity": "14953.24279000",
+          "fees": "12.16721000",
+          "inventory": "67"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "14677.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7461.14000000",
+          "equity": "14465.59779000",
+          "fees": "11.79221000",
+          "inventory": "75"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": {
+              "price": "94.00",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 45
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "94.00",
+              "quantity": "7"
+            },
+            "bid": null,
+            "decision_seq": 45
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "93.75",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "93.35",
+              "quantity": "10"
+            },
+            "decision_seq": 45
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "93.75",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "93.35",
+              "quantity": "10"
+            },
+            "decision_seq": 45
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 45,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "239"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "8",
+        "reservation_price": "95.26",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "-0.55110132706111145167180584188998357834139572950627",
+        "x_prev": "-0.91305309587531778671986130058111629942366420005772"
+      },
+      "event_hash": "505d40eedf123f060049aaaedd7c0acdf1808b8897fce8f678c620e4f55c5089",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.37500000",
+          "notional": "750.00000000",
+          "player_id": "B",
+          "price": "93.75",
+          "quantity": "8"
+        }
+      ],
+      "market_signal": "DOWN",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "100.81",
+      "previous_hash": "7d0450d9a310551ad929a200c618ce5a842f7aae85ac075619651e3b02c5375b",
+      "reference_price": "93.55",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15174.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8514.17000000",
+          "equity": "15124.57127500",
+          "fees": "12.31872500",
+          "inventory": "64"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15040.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8211.14000000",
+          "equity": "14953.24279000",
+          "fees": "12.16721000",
+          "inventory": "67"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "100.36",
+              "quantity": "7"
+            },
+            "decision_seq": 46
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "100.36",
+              "quantity": "7"
+            },
+            "decision_seq": 46
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "101.01",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.61",
+              "quantity": "10"
+            },
+            "decision_seq": 46
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "101.01",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "100.61",
+              "quantity": "10"
+            },
+            "decision_seq": 46
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 46,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "242"
+      },
+      "customer_order": {
+        "kind": "informed",
+        "quantity": "3",
+        "reservation_price": "104.31",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.30088632947347927746737316622467347824413806678154",
+        "x_prev": "-0.55110132706111145167180584188998357834139572950627"
+      },
+      "event_hash": "592a1d9f195c4a647ce28ab287a0e0d0c433f5df6061625321a864a7d3833d7b",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.15151500",
+          "notional": "303.03000000",
+          "player_id": "B",
+          "price": "101.01",
+          "quantity": "3"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "103.48",
+      "previous_hash": "505d40eedf123f060049aaaedd7c0acdf1808b8897fce8f678c620e4f55c5089",
+      "reference_price": "100.81",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15215.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8928.89000000",
+          "equity": "15174.36391500",
+          "fees": "12.52608500",
+          "inventory": "60"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15174.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8514.17000000",
+          "equity": "15124.57127500",
+          "fees": "12.31872500",
+          "inventory": "64"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "103.03",
+              "quantity": "7"
+            },
+            "decision_seq": 47
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "103.03",
+              "quantity": "7"
+            },
+            "decision_seq": 47
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "103.68",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.28",
+              "quantity": "10"
+            },
+            "decision_seq": 47
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "103.68",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "103.28",
+              "quantity": "10"
+            },
+            "decision_seq": 47
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 47,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "246"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "4",
+        "reservation_price": "106.18",
+        "side": "buy"
+      },
+      "environment_state_before": {
+        "x_cur": "0.70792398531203419015135764884191226299953053121363",
+        "x_prev": "0.30088632947347927746737316622467347824413806678154"
+      },
+      "event_hash": "840efe84e7e359bd018dfdbe8e800d147713542e5d21e17c25cdcb62a312a0fe",
+      "fills": [
+        {
+          "bot_side": "ask",
+          "fee": "0.20736000",
+          "notional": "414.72000000",
+          "player_id": "B",
+          "price": "103.68",
+          "quantity": "4"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "104.30",
+      "previous_hash": "592a1d9f195c4a647ce28ab287a0e0d0c433f5df6061625321a864a7d3833d7b",
+      "reference_price": "103.48",
+      "schema": "event.v1"
+    },
+    {
+      "accounts_after": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15431.50000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "7991.99000000",
+          "equity": "15474.46546500",
+          "fees": "12.99453500",
+          "inventory": "69"
+        }
+      },
+      "accounts_before": {
+        "A": {
+          "cash": "10000.00000000",
+          "equity": "15215.00000000",
+          "fees": "0.00000000",
+          "inventory": "50"
+        },
+        "B": {
+          "cash": "8928.89000000",
+          "equity": "15174.36391500",
+          "fees": "12.52608500",
+          "inventory": "60"
+        }
+      },
+      "actions": {
+        "A": {
+          "effective": {
+            "ask": null,
+            "bid": {
+              "price": "103.85",
+              "quantity": "7"
+            },
+            "decision_seq": 48
+          },
+          "error": null,
+          "submitted": {
+            "ask": null,
+            "bid": {
+              "price": "103.85",
+              "quantity": "7"
+            },
+            "decision_seq": 48
+          },
+          "valid": true
+        },
+        "B": {
+          "effective": {
+            "ask": {
+              "price": "104.50",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "104.10",
+              "quantity": "10"
+            },
+            "decision_seq": 48
+          },
+          "error": null,
+          "submitted": {
+            "ask": {
+              "price": "104.50",
+              "quantity": "10"
+            },
+            "bid": {
+              "price": "104.10",
+              "quantity": "10"
+            },
+            "decision_seq": 48
+          },
+          "valid": true
+        }
+      },
+      "block_seq": 48,
+      "cumulative_volume": {
+        "A": "0",
+        "B": "255"
+      },
+      "customer_order": {
+        "kind": "noise",
+        "quantity": "9",
+        "reservation_price": "103.56",
+        "side": "sell"
+      },
+      "environment_state_before": {
+        "x_cur": "0.38864698226994130352894927191511091176204716112460",
+        "x_prev": "0.70792398531203419015135764884191226299953053121363"
+      },
+      "event_hash": "d909f42d45009d9caf4dba4b655f0844bd625d5ae2723a009756a3b807a5cfd0",
+      "fills": [
+        {
+          "bot_side": "bid",
+          "fee": "0.46845000",
+          "notional": "936.90000000",
+          "player_id": "B",
+          "price": "104.10",
+          "quantity": "9"
+        }
+      ],
+      "market_signal": "UP",
+      "match_id": "demo-SignalFollower-TightSpread",
+      "next_reference_price": "108.63",
+      "previous_hash": "840efe84e7e359bd018dfdbe8e800d147713542e5d21e17c25cdcb62a312a0fe",
+      "reference_price": "104.30",
+      "schema": "event.v1"
+    }
+  ],
+  "initial_accounts": {
+    "A": {
+      "cash": "10000.00000000",
+      "equity": "14920.50000000",
+      "fees": "0.00000000",
+      "inventory": "50"
+    },
+    "B": {
+      "cash": "10000.00000000",
+      "equity": "14920.50000000",
+      "fees": "0.00000000",
+      "inventory": "50"
+    }
+  },
+  "manifest": {
+    "environment": {
+      "a": "1.4",
+      "b": "0.3",
+      "kind": "henon-v1",
+      "max_abs_state": "4",
+      "orderflow_key": "2a97516c354b68848cdbd8f54a226a0a9e32811d8112f0331a7e2a3c3e98f6e7",
+      "x_cur": "0.3",
+      "x_prev": "0.1"
+    },
+    "environment_commitment": "e251c99fad9d7aba4ee4d7692ca14a7a049a0b0462a78961493cd33719517729",
+    "match_id": "demo-SignalFollower-TightSpread",
+    "players": [
+      "A",
+      "B"
+    ],
+    "rules": {
+      "blocks": 48,
+      "customer_urgency_range": [
+        "0.50",
+        "3.50"
+      ],
+      "decimal_precision": 50,
+      "fee_bps": "5",
+      "hidden_reference_noise": "5",
+      "informed_probability_bps": 1000,
+      "initial_cash": "10000.00000000",
+      "initial_inventory": "50",
+      "inventory_range": [
+        "0",
+        "100"
+      ],
+      "max_quote_quantity": "10",
+      "price_range": [
+        "50.00",
+        "150.00"
+      ],
+      "price_tick": "0.01",
+      "reference_scale": "8",
+      "rounding": "ROUND_HALF_EVEN",
+      "signal_accuracy_bps": 6500
+    },
+    "ruleset": "blockmarket-v1-prototype.2",
+    "schema": "manifest.v1",
+    "tie_break_offset": 0
+  },
+  "schema": "replay.v1",
+  "summary": {
+    "blocks_completed": 48,
+    "final_accounts": {
+      "A": {
+        "cash": "10000.00000000",
+        "equity": "15431.50000000",
+        "fees": "0.00000000",
+        "inventory": "50"
+      },
+      "B": {
+        "cash": "7991.99000000",
+        "equity": "15474.46546500",
+        "fees": "12.99453500",
+        "inventory": "69"
+      }
+    },
+    "final_event_hash": "d909f42d45009d9caf4dba4b655f0844bd625d5ae2723a009756a3b807a5cfd0",
+    "initial_wealth": "14920.50000000",
+    "invalid_actions": {
+      "A": 0,
+      "B": 0
+    },
+    "manifest_hash": "06d5b2e054090c67199fef95da0a4f3731a3d5bc98593f0fd2a48a2cf68cc646",
+    "match_id": "demo-SignalFollower-TightSpread",
+    "ruleset": "blockmarket-v1-prototype.2",
+    "schema": "summary.v1",
+    "scores": {
+      "A": "-0.002879626353",
+      "B": "0.002879626353"
+    },
+    "summary_hash": "e9d779cbe6df2c33b5f951e4f15fd24d0b28d5f1d6b077ffda329a451854bf01",
+    "terminal_price": "108.63",
+    "wealth": {
+      "A": "15431.50000000",
+      "B": "15474.46546500"
+    }
+  }
+}

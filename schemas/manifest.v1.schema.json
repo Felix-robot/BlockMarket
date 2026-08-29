@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/manifest.v1.schema.json",
+  "title": "BlockMarket manifest.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "ruleset", "match_id", "players", "rules", "environment", "environment_commitment", "tie_break_offset"],
+  "properties": {
+    "schema": {"const": "manifest.v1"},
+    "ruleset": {"const": "blockmarket-v1-prototype.2"},
+    "match_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "players": {"const": ["A", "B"]},
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["blocks", "initial_cash", "initial_inventory", "inventory_range", "price_range", "price_tick", "max_quote_quantity", "fee_bps", "reference_scale", "informed_probability_bps", "signal_accuracy_bps", "customer_urgency_range", "hidden_reference_noise", "decimal_precision", "rounding"],
+      "properties": {
+        "blocks": {"type": "integer", "minimum": 1, "maximum": 1000000},
+        "initial_cash": {"type": "string", "pattern": "^[0-9]+\\.[0-9]{8}$"},
+        "initial_inventory": {"type": "string", "pattern": "^[0-9]+$"},
+        "inventory_range": {
+          "type": "array",
+          "prefixItems": [{"type": "string", "pattern": "^[0-9]+$"}, {"type": "string", "pattern": "^[0-9]+$"}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "price_range": {
+          "type": "array",
+          "prefixItems": [{"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"}, {"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "price_tick": {"const": "0.01"},
+        "max_quote_quantity": {"type": "string", "pattern": "^[1-9][0-9]*$"},
+        "fee_bps": {"type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$"},
+        "reference_scale": {"type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$"},
+        "informed_probability_bps": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "signal_accuracy_bps": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "customer_urgency_range": {
+          "type": "array",
+          "prefixItems": [{"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"}, {"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "hidden_reference_noise": {"type": "string", "pattern": "^[0-9]+(?:\\.[0-9]+)?$"},
+        "decimal_precision": {"const": 50},
+        "rounding": {"const": "ROUND_HALF_EVEN"}
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "a", "b", "x_prev", "x_cur", "max_abs_state", "orderflow_key"],
+      "properties": {
+        "kind": {"const": "henon-v1"},
+        "a": {"type": "string"},
+        "b": {"type": "string"},
+        "x_prev": {"type": "string"},
+        "x_cur": {"type": "string"},
+        "max_abs_state": {"type": "string"},
+        "orderflow_key": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "environment_commitment": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "tie_break_offset": {"type": "integer", "enum": [0, 1]}
+  }
+}

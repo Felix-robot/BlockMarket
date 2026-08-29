@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/summary.v1.schema.json",
+  "title": "BlockMarket summary.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "match_id", "ruleset", "blocks_completed", "terminal_price", "initial_wealth", "final_accounts", "wealth", "scores", "invalid_actions", "final_event_hash", "manifest_hash", "summary_hash"],
+  "properties": {
+    "schema": {"const": "summary.v1"},
+    "match_id": {"type": "string"},
+    "ruleset": {"const": "blockmarket-v1-prototype.2"},
+    "blocks_completed": {"type": "integer", "minimum": 1},
+    "terminal_price": {"$ref": "#/$defs/price"},
+    "initial_wealth": {"$ref": "#/$defs/money"},
+    "final_accounts": {"$ref": "#/$defs/playerAccounts"},
+    "wealth": {"$ref": "#/$defs/playerMoney"},
+    "scores": {"$ref": "#/$defs/playerScores"},
+    "invalid_actions": {"$ref": "#/$defs/playerIntegers"},
+    "final_event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "manifest_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "summary_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "price": {"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"},
+    "money": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{8}$"},
+    "score": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{12}$"},
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cash", "inventory", "fees", "equity"],
+      "properties": {
+        "cash": {"$ref": "#/$defs/money"},
+        "inventory": {"type": "string", "pattern": "^[0-9]+$"},
+        "fees": {"$ref": "#/$defs/money"},
+        "equity": {"$ref": "#/$defs/money"}
+      }
+    },
+    "playerAccounts": {"type": "object", "additionalProperties": false, "required": ["A", "B"], "properties": {"A": {"$ref": "#/$defs/account"}, "B": {"$ref": "#/$defs/account"}}},
+    "playerMoney": {"type": "object", "additionalProperties": false, "required": ["A", "B"], "properties": {"A": {"$ref": "#/$defs/money"}, "B": {"$ref": "#/$defs/money"}}},
+    "playerScores": {"type": "object", "additionalProperties": false, "required": ["A", "B"], "properties": {"A": {"$ref": "#/$defs/score"}, "B": {"$ref": "#/$defs/score"}}},
+    "playerIntegers": {"type": "object", "additionalProperties": false, "required": ["A", "B"], "properties": {"A": {"type": "integer", "minimum": 0}, "B": {"type": "integer", "minimum": 0}}}
+  }
+}

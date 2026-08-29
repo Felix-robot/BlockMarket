@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/replay.v1.schema.json",
+  "title": "BlockMarket replay.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "manifest", "initial_accounts", "events", "summary"],
+  "properties": {
+    "schema": {"const": "replay.v1"},
+    "manifest": {"$ref": "manifest.v1.schema.json"},
+    "initial_accounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B"],
+      "properties": {
+        "A": {"$ref": "event.v1.schema.json#/$defs/account"},
+        "B": {"$ref": "event.v1.schema.json#/$defs/account"}
+      }
+    },
+    "events": {"type": "array", "items": {"$ref": "event.v1.schema.json"}},
+    "summary": {"$ref": "summary.v1.schema.json"}
+  }
+}

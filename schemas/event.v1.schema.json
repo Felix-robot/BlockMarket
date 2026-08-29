@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blockmarket.local/schemas/event.v1.schema.json",
+  "title": "BlockMarket event.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "match_id", "block_seq", "environment_state_before", "reference_price", "market_signal", "customer_order", "accounts_before", "actions", "fills", "accounts_after", "next_reference_price", "cumulative_volume", "previous_hash", "event_hash"],
+  "properties": {
+    "schema": {"const": "event.v1"},
+    "match_id": {"type": "string"},
+    "block_seq": {"type": "integer", "minimum": 1},
+    "environment_state_before": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x_prev", "x_cur"],
+      "properties": {"x_prev": {"type": "string"}, "x_cur": {"type": "string"}}
+    },
+    "reference_price": {"$ref": "#/$defs/price"},
+    "market_signal": {"enum": ["UP", "DOWN"]},
+    "customer_order": {
+      "type": "object",
+      "required": ["kind", "side", "quantity", "reservation_price"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["noise", "informed"]},
+        "side": {"enum": ["buy", "sell"]},
+        "quantity": {"type": "string", "pattern": "^[1-9][0-9]*$"},
+        "reservation_price": {"$ref": "#/$defs/price"}
+      }
+    },
+    "accounts_before": {"$ref": "#/$defs/playerAccounts"},
+    "actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B"],
+      "properties": {"A": {"$ref": "#/$defs/actionRecord"}, "B": {"$ref": "#/$defs/actionRecord"}}
+    },
+    "fills": {"type": "array", "items": {"$ref": "#/$defs/fill"}, "maxItems": 2},
+    "accounts_after": {"$ref": "#/$defs/playerAccounts"},
+    "next_reference_price": {"$ref": "#/$defs/price"},
+    "cumulative_volume": {"$ref": "#/$defs/playerIntegerStrings"},
+    "previous_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "price": {"type": "string", "pattern": "^[0-9]+\\.[0-9]{2}$"},
+    "money": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{8}$"},
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cash", "inventory", "fees", "equity"],
+      "properties": {
+        "cash": {"$ref": "#/$defs/money"},
+        "inventory": {"type": "string", "pattern": "^[0-9]+$"},
+        "fees": {"$ref": "#/$defs/money"},
+        "equity": {"$ref": "#/$defs/money"}
+      }
+    },
+    "playerAccounts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B"],
+      "properties": {"A": {"$ref": "#/$defs/account"}, "B": {"$ref": "#/$defs/account"}}
+    },
+    "playerIntegerStrings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B"],
+      "properties": {
+        "A": {"type": "string", "pattern": "^[0-9]+$"},
+        "B": {"type": "string", "pattern": "^[0-9]+$"}
+      }
+    },
+    "actionRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["submitted", "valid", "error", "effective"],
+      "properties": {
+        "submitted": true,
+        "valid": {"type": "boolean"},
+        "error": {"oneOf": [{"type": "null"}, {"type": "string"}]},
+        "effective": {"$ref": "action.v1.schema.json"}
+      }
+    },
+    "fill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["player_id", "bot_side", "price", "quantity", "notional", "fee"],
+      "properties": {
+        "player_id": {"enum": ["A", "B"]},
+        "bot_side": {"enum": ["bid", "ask"]},
+        "price": {"$ref": "#/$defs/price"},
+        "quantity": {"type": "string", "pattern": "^[1-9][0-9]*$"},
+        "notional": {"$ref": "#/$defs/money"},
+        "fee": {"$ref": "#/$defs/money"}
+      }
+    }
+  }
+}

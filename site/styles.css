@@ -52,6 +52,8 @@ button { color: inherit; }
 .header-links { display: flex; gap: 18px; align-items: center; justify-self: end; font-family: var(--mono); font-size: 10px; }
 .header-links a { color: #84918b; text-decoration: none; }
 .header-links a:hover { color: var(--green); }
+.header-links a:first-child { display: inline-flex; align-items: center; min-height: 32px; padding: 0 11px; color: var(--ink); border: 1px solid var(--green); background: var(--green); font-weight: 800; transition: background .2s ease, transform .2s ease; }
+.header-links a:first-child:hover { color: var(--ink); background: #ceff83; transform: translateY(-1px); }
 
 .deck { display: flex; width: 100%; height: calc(100dvh - 64px); transition: transform .65s cubic-bezier(.22,.8,.22,1); will-change: transform; }
 .slide { position: relative; flex: 0 0 100vw; width: 100vw; height: 100%; overflow: hidden; }
@@ -67,8 +69,8 @@ button { color: inherit; }
 .hero-actions { display: flex; gap: 18px; align-items: center; margin: clamp(25px, 4vh, 40px) 0; }
 .primary-action { display: flex; gap: 40px; align-items: center; justify-content: space-between; min-width: 195px; height: 48px; margin: 0; padding: 0 19px; color: var(--ink); border: 0; background: var(--green); font-size: 12px; font-weight: 750; cursor: pointer; transition: transform .2s ease, background .2s ease; }
 .primary-action:hover { background: #ceff83; transform: translateY(-2px); }
-.guide-action { color: #aab6b0; font-family: var(--mono); font-size: 10px; text-decoration: none; }
-.guide-action:hover { color: var(--green); }
+.guide-action { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 17px; color: #edf5f1; border: 1px solid rgba(181,255,69,.48); background: rgba(181,255,69,.07); font-size: 12px; font-weight: 750; text-decoration: none; white-space: nowrap; transition: color .2s ease, background .2s ease, transform .2s ease; }
+.guide-action:hover { color: var(--ink); background: var(--green); transform: translateY(-2px); }
 .hero-stats { display: flex; margin: 0; }
 .hero-stats div { display: grid; gap: 1px; min-width: 112px; padding: 0 22px; border-left: 1px solid var(--dark-line); }
 .hero-stats div:first-child { padding-left: 0; border-left: 0; }
@@ -190,6 +192,8 @@ button { color: inherit; }
 .public-links { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; }
 .public-links a { padding: 9px 8px; color: var(--ink); border: 1px solid var(--light-line); font-family: var(--mono); font-size: 9px; text-align: center; text-decoration: none; }
 .public-links a:hover { color: #fff; background: var(--ink); }
+.public-links a:first-child { border-color: var(--green-deep); background: var(--green); font-weight: 800; }
+.public-links a:first-child:hover { color: var(--ink); background: #ceff83; }
 
 .deck-controls { position: fixed; z-index: 60; right: max(18px, 4.5vw); bottom: 14px; display: flex; gap: 10px; align-items: center; color: #fff; mix-blend-mode: difference; }
 .deck-controls > button { display: grid; place-items: center; width: 31px; height: 31px; padding: 0; border: 1px solid rgba(255,255,255,.35); background: transparent; cursor: pointer; }
@@ -216,7 +220,8 @@ button { color: inherit; }
   .site-header { grid-template-columns: 1fr auto; height: 58px; padding: 0 16px; }
   .site-header nav { position: fixed; right: 70px; bottom: 12px; left: 70px; z-index: 62; justify-content: center; height: 32px; pointer-events: none; }
   .site-header nav button { display: none; }
-  .header-links { gap: 10px; font-size: 8px; }
+  .header-links { gap: 8px; font-size: 8px; }
+  .header-links a:first-child { min-height: 28px; padding: 0 8px; }
   .deck { height: calc(100dvh - 58px); }
   .intro-slide { padding: 30px 18px 55px; }
   .intro-layout { display: flex; flex-direction: column; gap: 24px; align-items: stretch; justify-content: center; }
@@ -224,7 +229,7 @@ button { color: inherit; }
   .lead { font-size: 13px; line-height: 1.72; }
   .hero-actions { gap: 11px; margin: 18px 0 20px; }
   .primary-action { min-width: 180px; height: 42px; }
-  .guide-action { font-size: 8px; }
+  .guide-action { min-height: 42px; padding: 0 12px; font-size: 10px; }
   .hero-stats div { padding-inline: 12px; }
   .hero-stats dt { font-size: 12px; }
   .hero-stats dd { font-size: 9px; }

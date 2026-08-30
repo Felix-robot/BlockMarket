@@ -69,6 +69,8 @@ class StaticSiteTests(unittest.TestCase):
     def test_public_site_links_to_source_and_player_guide(self) -> None:
         html = (SITE / "index.html").read_text(encoding="utf-8")
         self.assertIn("https://github.com/Felix-robot/BlockMarket", html)
+        self.assertIn("https://github.com/Felix-robot/BlockMarket-Bots", html)
+        self.assertIn("提交 Bot", html)
         self.assertIn("docs/PLAYER_GUIDE.md", html)
         self.assertIn("src/blockmarket/bots.py#L71-L86", html)
         self.assertIn("src/blockmarket/bots.py#L46-L54", html)

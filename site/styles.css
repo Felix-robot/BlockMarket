@@ -52,6 +52,7 @@ button { color: inherit; }
 .header-links { display: flex; gap: 18px; align-items: center; justify-self: end; font-family: var(--mono); font-size: 10px; }
 .header-links a { color: #84918b; text-decoration: none; }
 .header-links a:hover { color: var(--green); }
+.header-links .submit-link { color: #f3f8f5; font-weight: 800; }
 .header-links a:first-child { display: inline-flex; align-items: center; min-height: 32px; padding: 0 11px; color: var(--ink); border: 1px solid var(--green); background: var(--green); font-weight: 800; transition: background .2s ease, transform .2s ease; }
 .header-links a:first-child:hover { color: var(--ink); background: #ceff83; transform: translateY(-1px); }
 

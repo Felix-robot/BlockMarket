@@ -16,7 +16,7 @@ Python 包版本：`0.3.0`
 - 秘密生命周期：全部对局结束前不写种子揭示、完整回放或提交副本；提交自修改会在揭示前中止。
 - 工程验证：51 项标准库单元测试、Python↔Node 跨语言对局、三人 round-robin、确定性审计包、分层篡改检测、三屏规则站、CLI smoke test、Ruff 与 GitHub Actions CI。
 - 公开展示：干净源码仓库 <https://github.com/Felix-robot/BlockMarket> 与 GitHub Pages 三屏规则站 <https://felix-robot.github.io/BlockMarket/> 已发布；回放页直达 A/B 参考 Bot 源码，证据页公开市场生成公式与 65% 信号、10% 知情客户等参数；桌面与手机端均采用大字号且保持固定三屏切换。
-- 公开提交：<https://github.com/Felix-robot/BlockMarket-Bots> 采用开放源码 Pull Request；玩家 Fork 后只需在个人目录提交一个 Python 或 Node.js Bot。公开样例 CI 只读、无密钥，正式比赛仍使用隐藏市场种子。
+- 公开提交：<https://github.com/Felix-robot/BlockMarket-Bots> 采用开源 Pull Request；玩家 Fork 后只需在个人目录提交一个 Python 或 Node.js Bot。外部贡献者的检查需维护者先批准，且只在 GitHub 托管的临时环境中使用只读权限、无密钥的公开样例；正式比赛仍使用隐藏市场种子。
 
 ## 已确认的玩法结论
 
@@ -44,4 +44,4 @@ Python 包版本：`0.3.0`
 1. 通过公开 Bot PR 仓库邀请 5–10 名测试者，记录规则理解、首次合法提交耗时、策略多样性、故障率和回放可读性。
 2. 形成独立 Alpha 报告，检查真人策略是否出现新统治关系或不可接受的位置尾部。
 3. 根据封闭 Alpha 冻结或再次升级规则；在此之前不对外承诺正式比赛。
-4. 若要接收不可信公开提交，再进入 Gate 5 OCI 无公网沙箱、双机复放和两倍规模压力测试。
+4. 若要把公开提交接入个人电脑或正式赛事评测，而不只是在 GitHub 托管的临时环境跑公开样例，再完成 Gate 5 OCI 无公网沙箱、双机复放和两倍规模压力测试。

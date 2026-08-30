@@ -70,7 +70,10 @@ class StaticSiteTests(unittest.TestCase):
         html = (SITE / "index.html").read_text(encoding="utf-8")
         self.assertIn("https://github.com/Felix-robot/BlockMarket", html)
         self.assertIn("https://github.com/Felix-robot/BlockMarket-Bots", html)
-        self.assertIn("提交 Bot", html)
+        self.assertIn("提交只要 3 步", html)
+        self.assertIn("现在提交 Bot", html)
+        self.assertIn("点 Fork", html)
+        self.assertIn("发 Pull Request", html)
         self.assertIn("docs/PLAYER_GUIDE.md", html)
         self.assertIn("src/blockmarket/bots.py#L71-L86", html)
         self.assertIn("src/blockmarket/bots.py#L46-L54", html)
@@ -81,6 +84,11 @@ class StaticSiteTests(unittest.TestCase):
         license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
         self.assertIn("Apache License", license_text)
         self.assertIn("Version 2.0, January 2004", license_text)
+
+        player_guide = (ROOT / "docs" / "PLAYER_GUIDE.md").read_text(encoding="utf-8")
+        self.assertIn("提交只要 3 步", player_guide)
+        self.assertIn("https://github.com/Felix-robot/BlockMarket-Bots", player_guide)
+        self.assertIn("Pull Request", player_guide)
 
     def test_large_type_overrides_cover_key_small_copy(self) -> None:
         css = (SITE / "styles.css").read_text(encoding="utf-8")

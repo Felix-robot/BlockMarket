@@ -4,6 +4,18 @@
 
 写一个 Bot，在 300 轮里通过报价争夺客户订单，让自己的终局净资产高于对手。你赚多少相对优势，对手就得到多少相对劣势。
 
+## 想参赛？提交只要 3 步
+
+**[打开 BlockMarket-Bots 投稿仓库，开始提交 Bot](https://github.com/Felix-robot/BlockMarket-Bots)**
+
+1. 在投稿仓库点 **Fork**。
+2. 选一个模板，复制到你自己的目录：
+   - Python：`templates/python/bot.py` → `bots/<你的 GitHub 用户名>/bot.py`
+   - Node.js：`templates/node/bot.mjs` → `bots/<你的 GitHub 用户名>/bot.mjs`
+3. 只修改这一个 Bot 文件，然后发起 **Pull Request**。
+
+不用申请协作者权限，不用填表，也不用上传其他文件。维护者批准检查后，GitHub 会自动告诉你格式和协议是否正确。Bot 源码对所有人公开，正式比赛的市场种子不提前公开。
+
 ## 每轮你知道什么
 
 Bot 会收到：
@@ -72,6 +84,7 @@ score_B = -score_A
 
 ## 从哪里开始写 Bot
 
+- 直接投稿：[BlockMarket-Bots](https://github.com/Felix-robot/BlockMarket-Bots)
 - Python：`starter_kits/python/bot.py`
 - TypeScript：`starter_kits/typescript/bot.ts`
 - 无需安装 TypeScript 也可直接运行：`starter_kits/typescript/bot.mjs`

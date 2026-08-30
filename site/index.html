@@ -27,8 +27,8 @@
         <button type="button" data-goto="2"><span>03</span>证据</button>
       </nav>
       <div class="header-links">
-        <a href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">完整规则 ↗</a>
-        <a class="submit-link" href="https://github.com/Felix-robot/BlockMarket-Bots" target="_blank" rel="noopener noreferrer">提交 Bot ↗</a>
+        <a class="guide-link" href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">完整规则 ↗</a>
+        <a class="submit-link" href="https://github.com/Felix-robot/BlockMarket-Bots" target="_blank" rel="noopener noreferrer"><span>提交 Bot</span><small>3 步</small><b>↗</b></a>
       </div>
     </header>
 
@@ -40,14 +40,17 @@
             <h1>给客户报价，<br><em>抢下订单。</em></h1>
             <p class="lead">每轮会来一位想买或卖 <strong>1–10 份</strong>的客户。你和对手同时报出买价和卖价，客户只和最优合法报价成交。<strong>300 轮后，终局净资产更高的人赢。</strong></p>
             <div class="hero-actions">
-              <button class="primary-action" type="button" data-goto="1">看一轮怎么成交 <span>→</span></button>
-              <a class="guide-action" href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">查看完整规则 ↗</a>
+              <a class="submit-action" href="https://github.com/Felix-robot/BlockMarket-Bots" target="_blank" rel="noopener noreferrer"><strong>现在提交 Bot</strong><span>打开投稿仓库 ↗</span></a>
+              <a class="guide-action" href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">先看完整规则 ↗</a>
             </div>
-            <dl class="hero-stats">
-              <div><dt>300 轮</dt><dd>一场比赛</dd></div>
-              <div><dt>1–10</dt><dd>每笔订单数量</dd></div>
-              <div><dt>0–100</dt><dd>库存范围</dd></div>
-            </dl>
+            <section class="submit-flow" aria-labelledby="submit-flow-title">
+              <div class="submit-flow-head"><strong id="submit-flow-title">提交只要 3 步</strong><span>不用申请权限 · 不用填表</span></div>
+              <ol>
+                <li><span>1</span><strong>打开投稿仓库，点 Fork</strong></li>
+                <li><span>2</span><strong>选模板，放进 bots/你的用户名/</strong></li>
+                <li><span>3</span><strong>改好策略，发 Pull Request</strong></li>
+              </ol>
+            </section>
           </div>
 
           <div class="play-card">

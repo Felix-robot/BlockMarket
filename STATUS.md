@@ -15,7 +15,7 @@ Python 包版本：`0.3.0`
 - Gate 4 代码层：最多 16 人 round-robin、提交快照哈希、赛前种子承诺、HMAC 确定性派生、同种子 AB/BA 换边、排名、提交/回放/诊断/整包哈希与独立审计命令。
 - 秘密生命周期：全部对局结束前不写种子揭示、完整回放或提交副本；提交自修改会在揭示前中止。
 - 工程验证：51 项标准库单元测试、Python↔Node 跨语言对局、三人 round-robin、确定性审计包、分层篡改检测、三屏规则站、CLI smoke test、Ruff 与 GitHub Actions CI。
-- 公开展示：干净源码仓库 <https://github.com/Felix-robot/BlockMarket> 与 GitHub Pages 三屏规则站 <https://felix-robot.github.io/BlockMarket/> 已发布；回放页直达 A/B 参考 Bot 源码，证据页公开市场生成公式与 65% 信号、10% 知情客户等参数；桌面与手机端均采用大字号且保持固定三屏切换。
+- 公开展示：干净源码仓库 <https://github.com/Felix-robot/BlockMarket> 与 GitHub Pages 三屏规则站 <https://felix-robot.github.io/BlockMarket/> 已发布；第一屏以高对比按钮和“Fork → 复制模板 → Pull Request”三步文字直达 Bot 投稿，Player Guide 顶部也使用同一流程；回放页直达 A/B 参考 Bot 源码，证据页公开市场生成公式与 65% 信号、10% 知情客户等参数；桌面与手机端均保持固定三屏切换。
 - 公开提交：<https://github.com/Felix-robot/BlockMarket-Bots> 采用开源 Pull Request；玩家 Fork 后只需在个人目录提交一个 Python 或 Node.js Bot。外部贡献者的检查需维护者先批准，且只在 GitHub 托管的临时环境中使用只读权限、无密钥的公开样例；正式比赛仍使用隐藏市场种子。
 
 ## 已确认的玩法结论

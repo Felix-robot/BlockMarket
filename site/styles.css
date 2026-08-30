@@ -141,7 +141,7 @@ button { color: inherit; }
 .bot-card > div + div { border-top: 1px solid rgba(255,255,255,.06); }
 .bot-card > div span { color: #75837c; font-family: var(--mono); font-size: 8px; }
 .bot-card > div strong { justify-self: end; color: #d6dfda; font-family: var(--mono); font-size: 9px; }
-.bot-source-links { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 7px; }
+.bot-source-links { display: grid; grid-template-columns: 1fr; gap: 6px; margin-top: 7px; }
 .bot-source-links a { display: flex; gap: 6px; align-items: center; justify-content: center; min-height: 32px; border: 1px solid var(--dark-line); font-family: var(--mono); font-size: 9px; font-weight: 750; text-decoration: none; transition: color .2s ease, border-color .2s ease, background .2s ease; }
 .bot-source-links a span { font-weight: 900; }
 .bot-source-links .bot-a-source { color: #a9e9fb; border-color: rgba(84,200,235,.45); background: rgba(84,200,235,.055); }
@@ -282,7 +282,7 @@ button { color: inherit; }
   .bot-card > div { min-height: 19px; padding-inline: 6px; }
   .bot-card > div span { font-size: 7px; }
   .bot-card > div strong { font-size: 8px; }
-  .bot-source-links { gap: 5px; margin-top: 6px; }
+  .bot-source-links { grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 6px; }
   .bot-source-links a { min-height: 26px; font-size: 8px; }
   .round-result { padding-top: 6px; }
   .round-result > strong { display: inline; margin-left: 7px; font-size: 11px; }
@@ -299,7 +299,7 @@ button { color: inherit; }
   .evidence-heading h2 { font-size: 32px; }
   .evidence-grid { display: flex; flex-direction: column; gap: 7px; height: calc(100% - 94px); }
   .evidence-card { flex: 1 1 0; padding: 10px 12px; }
-  .evidence-grid > .market-card { flex-grow: 1.08; }
+  .evidence-grid > .market-card { flex-grow: 1.4; }
   .evidence-card header { padding-bottom: 7px; }
   .evidence-card header > span { font-size: 8px; }
   .evidence-card header > strong { font-size: 11px; }
@@ -339,6 +339,86 @@ button { color: inherit; }
   .slide-heading { height: 62px; }
   .replay-console { height: calc(100% - 76px); }
   .evidence-heading h2 { font-size: 42px; }
+}
+
+/* Large-type pass: retire the 7–10 px interface labels. */
+.brand { font-size: 18px; }
+.site-header nav button { font-size: 18px; }
+.site-header nav button span { font-size: 15px; }
+.header-links { font-size: 16px; }
+.kicker { font-size: 18px; }
+.lead { font-size: 20px; }
+.primary-action, .guide-action { font-size: 18px; }
+.hero-stats dt { font-size: 21px; }
+.hero-stats dd { font-size: 16px; }
+.decision-head { font-size: 16px; }
+.decision-price span, .decision-row > span { font-size: 16px; }
+.decision-row strong { font-size: 18px; }
+.decision-row small, .muted-row strong { font-size: 16px; }
+.core-loop li > span { font-size: 16px; }
+.core-loop strong { font-size: 18px; }
+.core-loop small { font-size: 15px; }
+.tradeoff-line, .slide-heading > p { font-size: 17px; }
+.console-header, .panel-label { font-size: 16px; }
+.console-header small, .hash-label code { font-size: 15px; }
+#chart-grid text { font-size: 16px; }
+.chart-readout span, .score-strip span, .score-strip small { font-size: 15px; }
+.chart-readout strong { font-size: 17px; }
+.pill, .bot-card header span, .bot-card > div span { font-size: 15px; }
+.bot-card header strong, .bot-card > div strong { font-size: 16px; }
+.bot-source-links a { font-size: 17px; }
+.round-result > span { font-size: 16px; }
+.round-result > strong { font-size: 18px; }
+.round-result p { font-size: 16px; }
+.relative-score > strong { font-size: 16px !important; }
+.replay-controls .play, .replay-controls output { font-size: 16px; }
+.evidence-card header > span, .evidence-card header > small { font-size: 16px; }
+.evidence-card header > strong { font-size: 20px; }
+.strategy-list span, .strategy-list small { font-size: 16px; }
+.strategy-list strong { font-size: 18px; }
+.evidence-card > p { font-size: 18px; }
+.audit-card li span { font-size: 17px; }
+.audit-card li small, .audit-card code { font-size: 16px; }
+.market-copy span, .market-copy small { font-size: 16px; }
+.market-copy strong { font-size: 19px; }
+.market-formula { font-size: 16px; }
+.factor-grid dd, .public-links a { font-size: 16px; }
+.deck-controls > span { font-size: 16px; }
+
+@media (max-width: 700px) {
+  .evidence-heading .kicker { display: none; }
+  .brand { font-size: 15px; }
+  .header-links { font-size: 13px; }
+  .kicker { font-size: 14px; }
+  .lead { font-size: 16px; }
+  .primary-action, .guide-action { font-size: 14px; }
+  .hero-stats dt { font-size: 16px; }
+  .hero-stats dd { font-size: 13px; }
+  .decision-head, .decision-price span, .decision-row > span { font-size: 12px; }
+  .decision-row strong, .core-loop strong { font-size: 14px; }
+  .decision-row small, .muted-row strong, .core-loop li > span { font-size: 12px; }
+  .tradeoff-line { font-size: 13px; }
+  .console-header, .panel-label { font-size: 12px; }
+  .console-header small, #chart-grid text { font-size: 11px; }
+  .chart-readout span, .score-strip span, .score-strip small { font-size: 11px; }
+  .chart-readout strong { font-size: 12px; }
+  .bot-card header span, .bot-card > div span { font-size: 11px; }
+  .bot-card header strong, .bot-card > div strong { font-size: 12px; }
+  .bot-source-links a { font-size: 13px; }
+  .round-result > span, .round-result p { font-size: 12px; }
+  .round-result > strong { font-size: 14px; }
+  .relative-score > strong { font-size: 12px !important; }
+  .replay-controls .play, .replay-controls output { font-size: 12px; }
+  .evidence-card header > span, .evidence-card header > small { font-size: 11px; }
+  .evidence-card header > strong { font-size: 14px; }
+  .strategy-list span, .strategy-list small { font-size: 11px; }
+  .strategy-list strong { font-size: 13px; }
+  .evidence-card > p { font-size: 13px; }
+  .audit-card li span, .audit-card code { font-size: 12px; }
+  .market-copy span, .market-copy small { font-size: 11px; }
+  .market-copy strong { font-size: 14px; }
+  .market-formula { font-size: 11px; }
+  .factor-grid dd, .public-links a, .deck-controls > span { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

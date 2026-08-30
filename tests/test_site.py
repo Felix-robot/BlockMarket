@@ -80,6 +80,14 @@ class StaticSiteTests(unittest.TestCase):
         self.assertIn("Apache License", license_text)
         self.assertIn("Version 2.0, January 2004", license_text)
 
+    def test_large_type_overrides_cover_key_small_copy(self) -> None:
+        css = (SITE / "styles.css").read_text(encoding="utf-8")
+        self.assertIn("Large-type pass", css)
+        self.assertIn(".bot-source-links a { font-size: 17px; }", css)
+        self.assertIn(".evidence-card > p { font-size: 18px; }", css)
+        self.assertIn(".market-formula { font-size: 16px; }", css)
+        self.assertIn(".lead { font-size: 20px; }", css)
+
 
 if __name__ == "__main__":
     unittest.main()

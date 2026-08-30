@@ -14,8 +14,8 @@ Python 包版本：`0.3.0`
 - Gate 3 本地运行层：双 Bot JSONL 子进程、同轮并发决策、250 ms 默认硬超时、stdout/stderr 上限、单方故障隔离、Python/TypeScript starter kit、恶意进程回归测试。
 - Gate 4 代码层：最多 16 人 round-robin、提交快照哈希、赛前种子承诺、HMAC 确定性派生、同种子 AB/BA 换边、排名、提交/回放/诊断/整包哈希与独立审计命令。
 - 秘密生命周期：全部对局结束前不写种子揭示、完整回放或提交副本；提交自修改会在揭示前中止。
-- 工程验证：50 项标准库单元测试、Python↔Node 跨语言对局、三人 round-robin、确定性审计包、分层篡改检测、三屏规则站、CLI smoke test、Ruff 与 GitHub Actions CI。
-- 公开展示：干净源码仓库 <https://github.com/Felix-robot/BlockMarket> 与 GitHub Pages 三屏规则站 <https://felix-robot.github.io/BlockMarket/> 已发布；回放页直达 A/B 参考 Bot 源码，证据页公开市场生成公式与 65% 信号、10% 知情客户等参数。
+- 工程验证：51 项标准库单元测试、Python↔Node 跨语言对局、三人 round-robin、确定性审计包、分层篡改检测、三屏规则站、CLI smoke test、Ruff 与 GitHub Actions CI。
+- 公开展示：干净源码仓库 <https://github.com/Felix-robot/BlockMarket> 与 GitHub Pages 三屏规则站 <https://felix-robot.github.io/BlockMarket/> 已发布；回放页直达 A/B 参考 Bot 源码，证据页公开市场生成公式与 65% 信号、10% 知情客户等参数；桌面与手机端均采用大字号且保持固定三屏切换。
 
 ## 已确认的玩法结论
 

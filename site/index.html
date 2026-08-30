@@ -107,6 +107,10 @@
                   <div><span>BID</span><strong id="b-bid">—</strong></div><div><span>ASK</span><strong id="b-ask">—</strong></div>
                 </article>
               </div>
+              <nav class="bot-source-links" aria-label="演示 Bot 源码">
+                <a class="bot-a-source" href="https://github.com/Felix-robot/BlockMarket/blob/main/src/blockmarket/bots.py#L71-L86" target="_blank" rel="noopener noreferrer"><span>A</span> 查看 A Bot 源码 ↗</a>
+                <a class="bot-b-source" href="https://github.com/Felix-robot/BlockMarket/blob/main/src/blockmarket/bots.py#L46-L54" target="_blank" rel="noopener noreferrer"><span>B</span> 查看 B Bot 源码 ↗</a>
+              </nav>
               <div class="round-result"><span>本轮结果</span><strong id="fill-result">—</strong><p id="round-explanation">正在载入真实回放……</p></div>
             </aside>
           </div>
@@ -127,45 +131,52 @@
         </div>
       </section>
 
-      <section class="slide evidence-slide" id="evidence" data-slide="2" aria-label="策略、审计与下一阶段">
+      <section class="slide evidence-slide" id="evidence" data-slide="2" aria-label="策略、公平与市场生成">
         <div class="evidence-heading">
-          <p class="kicker dark-kicker">STRATEGY · AUDIT · NEXT</p>
-          <h2>没有固定最优，<br>也没有审计黑箱。</h2>
+          <p class="kicker dark-kicker">策略 · 公平 · 市场生成</p>
+          <h2>没有万能策略，<br>市场也不是随便编的。</h2>
         </div>
 
         <div class="evidence-grid">
           <article class="evidence-card strategy-card">
-            <header><span>01</span><strong>循环克制</strong><small>100 seeds · AB/BA</small></header>
+            <header><span>01</span><strong>没有万能策略</strong><small>100 组市场 · 双方换位</small></header>
             <div class="strategy-list">
-              <div><span>信号</span><strong>SignalFollower</strong><small>+0.030718</small></div>
+              <div><span>看方向信号</span><strong>SignalFollower</strong><small>75–25 赢过“抢成交”</small></div>
               <i>→</i>
-              <div><span>流量</span><strong>TightSpread</strong><small>+0.246719</small></div>
+              <div><span>抢更多成交</span><strong>TightSpread</strong><small>100–0 赢过“猜对手”</small></div>
               <i>→</i>
-              <div><span>适应</span><strong>OpponentAdaptive</strong><small>+0.060065</small></div>
+              <div><span>根据对手调整</span><strong>OpponentAdaptive</strong><small>98–2 赢过“看信号”</small></div>
               <i>↩</i>
             </div>
-            <p>七个参考策略没有严格统治者；这是实证结果，不是数学证明。</p>
+            <p>同一批 100 个市场上，双方交换 A/B 位置各打一遍。箭头只表示这组测试里更常赢，不代表永远稳赢。</p>
           </article>
 
           <article class="evidence-card audit-card">
-            <header><span>02</span><strong>独立审计</strong><small>COMMIT → VERIFY</small></header>
+            <header><span>02</span><strong>结果为什么可信</strong><small>先锁定 · 后公开</small></header>
             <ol>
-              <li><span>Commit</span><small>赛前公布种子承诺</small></li>
-              <li><span>Play AB / BA</span><small>同环境交换位置</small></li>
-              <li><span>Reveal</span><small>赛后揭示隐藏材料</small></li>
-              <li><span>Verify</span><small>重算订单、成交与哈希</small></li>
+              <li><span>赛前锁住随机种子</span><small>先公布指纹，不能临时换市场</small></li>
+              <li><span>双方换位再打</span><small>排除 A/B 位置带来的便宜</small></li>
+              <li><span>赛后公开隐藏材料</span><small>公开种子、客户订单和完整回放</small></li>
+              <li><span>任何人都能重新算</span><small>重算价格、成交、资产和哈希</small></li>
             </ol>
-            <code><span>$</span> verify replay.json&nbsp; <strong>✓ valid</strong></code>
+            <code><span>$</span> verify replay.json&nbsp; <strong>✓ 结果一致</strong></code>
           </article>
 
-          <article class="evidence-card next-card">
-            <header><span>03</span><strong>下一关闭条件</strong><small>GATE 4</small></header>
-            <div><strong>5–10 人</strong><span>真人封闭 Alpha</span></div>
-            <ul><li>找规则误解</li><li>找新统治策略</li><li>找位置尾部</li></ul>
-            <p>核心规则、审计、矩阵、Bot Runner 与锦标赛编排代码已完成。</p>
-            <nav class="public-links" aria-label="项目链接">
-              <a href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/PLAYER_GUIDE.md" target="_blank" rel="noopener noreferrer">完整规则 ↗</a>
-              <a href="https://github.com/Felix-robot/BlockMarket" target="_blank" rel="noopener noreferrer">GitHub 源码 ↗</a>
+          <article class="evidence-card market-card">
+            <header><span>03</span><strong>市场怎么生成</strong><small>固定公式 · 可复现</small></header>
+            <div class="market-model">
+              <div class="market-copy"><span>价格走势</span><strong>固定递推公式 + 隐藏种子</strong><small>同一个 seed 每次都生成同一条曲线，不连接真实行情。</small></div>
+              <code class="market-formula">xₙ₊₁ = 1 − 1.4xₙ² + 0.3xₙ₋₁<br>price = 100 + 8xₙ + ±5 噪声</code>
+              <dl class="factor-grid">
+                <div><dt>65%</dt><dd>方向提示正确</dd></div>
+                <div><dt>10%</dt><dd>知情客户</dd></div>
+                <div><dt>90%</dt><dd>普通客户</dd></div>
+              </dl>
+            </div>
+            <p>客户每轮买或卖 1–10 份；知情客户会顺着下一轮真实涨跌下单，更容易占过窄报价的便宜。</p>
+            <nav class="public-links" aria-label="市场规则源码">
+              <a href="https://github.com/Felix-robot/BlockMarket/blob/main/src/blockmarket/orderflow.py" target="_blank" rel="noopener noreferrer">市场生成源码 ↗</a>
+              <a href="https://github.com/Felix-robot/BlockMarket/blob/main/docs/RULES_V1.md" target="_blank" rel="noopener noreferrer">参数与完整规则 ↗</a>
             </nav>
           </article>
         </div>

@@ -235,6 +235,11 @@ function slideFromHash() {
   return index === -1 ? 0 : index;
 }
 
+function resetHorizontalScroll() {
+  document.documentElement.scrollLeft = 0;
+  document.body.scrollLeft = 0;
+}
+
 function goToSlide(rawIndex, { writeHistory = false } = {}) {
   const slides = [...document.querySelectorAll(".slide")];
   const index = Math.max(0, Math.min(slides.length - 1, rawIndex));
@@ -266,9 +271,16 @@ function goToSlide(rawIndex, { writeHistory = false } = {}) {
   } else if (!window.location.hash) {
     window.history.replaceState({ slide: index }, "", nextHash);
   }
+
+  // Native hash targeting may scroll the wide deck before our transform runs.
+  // Keep navigation entirely inside the deck so direct #replay/#evidence links
+  // land on the same frame as button navigation.
+  resetHorizontalScroll();
+  window.requestAnimationFrame(resetHorizontalScroll);
 }
 
 function bindDeckNavigation() {
+  if ("scrollRestoration" in window.history) window.history.scrollRestoration = "manual";
   document.querySelectorAll("[data-goto]").forEach((button) => {
     button.addEventListener("click", () => goToSlide(Number(button.dataset.goto), { writeHistory: true }));
   });
